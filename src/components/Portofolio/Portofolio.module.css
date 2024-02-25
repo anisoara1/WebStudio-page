@@ -1,0 +1,110 @@
+.mediaList {
+  display: flex;
+  flex-direction: row;
+  gap: 3vh;
+}
+
+.mediaBtn {
+  margin: 0;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  background: #f5f4fa;
+}
+.mediaText {
+  margin: 0;
+  text-transform: capitalize;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.cardItem {
+  width: 52vh;
+  height: 58vh;
+}
+
+.title {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.text {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.hoverOverlay {
+  position: absolute;
+  width: 52vh;
+  height: 42vh;
+  background: rgba(33, 150, 243, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  -webkit-transform: translatey(0, -0%, 0);
+  transform: translatey(0, -0%, 0);
+  -webkit-transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
+  transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
+  z-index: 1;
+}
+.textOveraly {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.firstImg {
+  background: url('../../images/pImg1.jpg') center / cover no-repeat;
+}
+
+.secondImg {
+  background: url('../../images/pImg2.jpg') center / cover no-repeat;
+}
+
+.thirdImg {
+  background: url('../../images/pImg3.jpg') center / cover no-repeat;
+}
+
+.fourthImg {
+  background: url('../../images/pImg4.jpg') center / cover no-repeat;
+}
+
+.fivthImg {
+  background: url('../../images/pImg5.jpg') center / cover no-repeat;
+}
+
+.sixthImg {
+  background: url('../../images/pImg6.jpg') center / cover no-repeat;
+}
+
+.seventhImg {
+  background: url('../../images/pImg7.jpg') center / cover no-repeat;
+}
+
+.eigthImg {
+  background: url('../../images/pImg8.jpg') center / cover no-repeat;
+}
+
+.ninthImg {
+  background: url('../../images/pImg9.jpg') center / cover no-repeat;
+}
