@@ -36,12 +36,15 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Header ref={headerRef} toggleDarkMode={toggleDarkMode} />
-      <Routes>
-        <Route path="/studio" element={<StudioPage />} />
-        <Route path="/portofolio" element={<PortofolioPage />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <div>
+        <Header ref={headerRef} toggleDarkMode={toggleDarkMode} />
+        <Routes>
+          <Route path="*" element={<StudioPage />} />
+          <Route path="/studio" element={<StudioPage />} />
+          <Route path="/portofolio" element={<PortofolioPage />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
       <ErrorBoundary />
     </ThemeProvider>
   );

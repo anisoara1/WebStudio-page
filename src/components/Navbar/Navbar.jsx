@@ -63,7 +63,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
             <Typography
               sx={{
                 color: 'text.primary',
-                padding: '0 0 3.5vh 0',
+                padding: '0 0 3.1vh 0',
                 cursor: 'pointer',
                 '&:hover': {
                   color: '#2196F3',
@@ -85,7 +85,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
             <Typography
               sx={{
                 color: 'text.primary',
-                padding: '0 0 3.5vh 0',
+                padding: '0 0 3.1vh 0',
                 cursor: 'pointer',
                 '&:hover': {
                   color: '#2196F3',
@@ -107,7 +107,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
             <Typography
               sx={{
                 color: 'text.primary',
-                padding: '0 0 3.5vh 0',
+                padding: '0 0 3.1vh 0',
                 cursor: 'pointer',
                 '&:hover': {
                   color: '#2196F3',
