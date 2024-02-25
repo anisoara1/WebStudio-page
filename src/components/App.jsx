@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Header } from './Navbar/Navbar';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { PortofolioPage } from '../pages/PortofolioPage';
 import { StudioPage } from '../pages/StudioPage';
 import { NotFound } from '../pages/NotFound';
@@ -10,7 +10,6 @@ import ErrorBoundary from '../ErrorBoundary';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
-
   const toggleDarkMode = () => {
     setDarkMode(prevMode => !prevMode);
   };
@@ -29,9 +28,11 @@ export default function App() {
     },
   });
 
+  const { pathname } = useLocation();
+
   useEffect(() => {
-    window.scrollTo(0, document.body.scrollHeight);
-  }, []);
+    window.scrollTo(0, 0); // Scroll to the top of the page when component mounts
+  }, [pathname]); // Scroll to top whenever pathname changes
 
   return (
     <ThemeProvider theme={theme}>

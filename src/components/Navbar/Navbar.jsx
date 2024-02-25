@@ -139,6 +139,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
       >
         <li sx={{ padding: '0px' }}>
           <Link
+            target="_blank"
             to="https://mail.google.com/mail/u/0/#inbox"
             className={css.link}
           >
@@ -157,7 +158,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
           </Link>
         </li>
         <li sx={{ padding: '0px' }}>
-          <Link to="tel:9051290512" className={css.link}>
+          <Link target="_blank" to="tel:9051290512" className={css.link}>
             <Typography
               sx={{
                 color: 'text.primary',

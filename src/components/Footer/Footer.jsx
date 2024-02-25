@@ -3,13 +3,13 @@ import css from './Footer.module.css';
 import {
   Box,
   MenuList,
-  Link,
   Container,
   Fab,
   TextField,
   Button,
+  Typography,
 } from '@mui/material';
-
+import { Link } from 'react-router-dom';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -38,36 +38,64 @@ export const Footer = () => {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center',
+          alignItems: 'flex-start',
           padding: '0',
         }}
       >
-        <Link
-          sx={{
-            textDecoration: 'none',
-            color: ' #ffffff',
-            cursor: 'pointer',
-          }}
-          to="/contact"
-        >
-          <h1 className={css.title}>
+        <Link to="*" className={css.link}>
+          <Typography
+            sx={{
+              color: 'white',
+              fontFamily: 'Raleway, sans-serif',
+              fontWeight: '700',
+              fontSize: '26px',
+              letterSpacing: '0.03em',
+            }}
+          >
             <span className={css.titleBlue}>Web</span>Studio
-          </h1>
+          </Typography>
         </Link>
         <MenuList
           sx={{
+            fontFamily: 'Roboto',
+            fontWeight: '400',
+            letterSpacing: '0.03em',
+            textAlign: 'left',
             padding: '0',
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'center',
+            alignItems: 'flex-start',
             gap: '1vh',
             color: ' #ffffff',
             cursor: 'pointer',
           }}
         >
-          <li sx={{ padding: '0px' }} className={css.menuItem}>
+          <li sx={{ padding: '0px' }}>
             <Link
-              to="/"
+              target="_blank"
+              to="https://www.google.com/maps"
+              className={css.link}
+            >
+              <Typography
+                sx={{
+                  fontSize: 'inherit',
+                  padding: '0',
+                  color: '#FFFFFF4D',
+                  cursor: 'pointer',
+                  '&:hover': {
+                    color: 'white',
+                  },
+                }}
+              >
+                695 Park Ave, NY 10065, USA
+              </Typography>
+            </Link>
+          </li>
+          <li sx={{ padding: '0px' }}>
+            <Link
+              target="_blank"
+              className={css.link}
+              to="https://mail.google.com/mail/u/0/#inbox"
               sx={{
                 textDecoration: 'none',
                 padding: '0',
@@ -75,25 +103,26 @@ export const Footer = () => {
                 cursor: 'pointer',
               }}
             >
-              695 Park Ave, NY 10065, USA
+              <Typography
+                sx={{
+                  fontSize: 'inherit',
+                  padding: '0',
+                  color: '#FFFFFF4D',
+                  cursor: 'pointer',
+                  '&:hover': {
+                    color: 'white',
+                  },
+                }}
+              >
+                info@devstudio.com
+              </Typography>
             </Link>
           </li>
-          <li sx={{ padding: '0px' }} className={css.menuItem}>
+          <li sx={{ padding: '0px' }}>
             <Link
-              to="/"
-              sx={{
-                textDecoration: 'none',
-                padding: '0',
-                color: '#FFFFFF4D',
-                cursor: 'pointer',
-              }}
-            >
-              info@devstudio.com
-            </Link>
-          </li>
-          <li sx={{ padding: '0px' }} className={css.menuItem}>
-            <Link
-              to="/"
+              target="_blank"
+              className={css.link}
+              to="tel:9051290512"
               sx={{
                 textDecoration: 'none',
                 padding: '0 0 2.5vh 0',
@@ -101,7 +130,19 @@ export const Footer = () => {
                 cursor: 'pointer',
               }}
             >
-              +1 212-772-4150
+              <Typography
+                sx={{
+                  fontSize: 'inherit',
+                  padding: '0',
+                  color: '#FFFFFF4D',
+                  cursor: 'pointer',
+                  '&:hover': {
+                    color: 'white',
+                  },
+                }}
+              >
+                +1 212-772-4150
+              </Typography>
             </Link>
           </li>
         </MenuList>
@@ -177,14 +218,14 @@ export const Footer = () => {
               },
               '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline':
                 {
-                  borderColor: '#FFFFFF4D',
+                  borderColor: 'white',
                   color: '#FFFFFF4D',
                 },
               '& .MuiInputLabel-root': {
                 color: '#FFFFFF4D',
               },
               '& .MuiInputLabel-root.Mui-focused': {
-                color: '#FFFFFF4D',
+                color: 'white',
               },
             }}
           />
