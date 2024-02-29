@@ -38,18 +38,13 @@
   gap: 2vh;
 }
 
-h2 {
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-align: left;
-}
-
 @media screen and (max-width: 768px) {
   .title {
     font-size: 24px;
+  }
+
+  .mediaTitle {
+    margin: 0;
   }
 
   .mediaList {
@@ -60,10 +55,12 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2vh;
   }
 
   .subscribeForm {
     flex-direction: column;
     align-items: center;
+    gap: 0;
   }
 }

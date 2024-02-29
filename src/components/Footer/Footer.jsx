@@ -35,9 +35,11 @@ export const Footer = () => {
           gap: '40px',
         },
         '@media screen and (max-width: 768px)': {
-          height: '50vh',
           flexWrap: 'wrap',
+          height: '45vh',
+          alignContent: 'center',
           justifyContent: 'space-around',
+          gap: '65px',
         },
       }}
       disableGutters
@@ -48,6 +50,10 @@ export const Footer = () => {
           flexDirection: 'column',
           alignItems: 'flex-start',
           padding: '0',
+          '@media screen and (max-width: 768px)': {
+            alignItems: 'center',
+            gap: '2vh',
+          },
         }}
       >
         <Link to="*" className={css.link}>
@@ -76,6 +82,9 @@ export const Footer = () => {
             gap: '1vh',
             color: ' #ffffff',
             cursor: 'pointer',
+            '@media screen and (max-width: 768px)': {
+              alignItems: 'center',
+            },
           }}
         >
           <li sx={{ padding: '0px' }}>
@@ -155,8 +164,33 @@ export const Footer = () => {
           </li>
         </MenuList>
       </Box>
-      <Box sx={{ color: '#FFFFFF' }}>
-        <h2>FIND US ON</h2>
+      <Box
+        sx={{
+          color: '#FFFFFF',
+          '@media screen and (max-width: 768px)': {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: '1vh',
+            marginTop: '-2.5vh',
+          },
+        }}
+      >
+        <Typography
+          sx={{
+            fontFamily: 'Roboto',
+            fontSize: '14px',
+            fontWeight: '700',
+            lineHeight: '16px',
+            letterSpacing: '0.03em',
+            textAlign: 'center',
+            '@media screen and (max-width: 768px)': {
+              margin: '0',
+            },
+          }}
+        >
+          FIND US ON
+        </Typography>
         <MenuList className={css.mediaList}>
           <Fab
             size="small"
@@ -211,7 +245,18 @@ export const Footer = () => {
         </MenuList>
       </Box>
       <Box className={css.subscribeBox} sx={{ color: '#FFFFFF' }}>
-        <h2>SUBSCRIBE TO THE NEWSLETTER </h2>
+        <Typography
+          sx={{
+            fontFamily: 'Roboto',
+            fontSize: '14px',
+            fontWeight: '700',
+            lineHeight: '16px',
+            letterSpacing: '0.03em',
+            textAlign: 'center',
+          }}
+        >
+          SUBSCRIBE TO THE NEWSLETTER
+        </Typography>
         <Box className={css.subscribeForm}>
           <TextField
             id="outlined-basic"
@@ -234,6 +279,9 @@ export const Footer = () => {
               },
               '& .MuiInputLabel-root.Mui-focused': {
                 color: 'white',
+              },
+              '@media screen and (max-width: 768px)': {
+                width: '30vh',
               },
             }}
           />
@@ -281,7 +329,8 @@ export const Footer = () => {
             color: '#FFFFFF4D',
           }}
         >
-          <CopyrightIcon />
+          <p>Copyright</p>
+          <CopyrightIcon fontSize="small" />
           <p>Anisoara C.</p>
         </Box>
       </Box>
