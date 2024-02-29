@@ -33,12 +33,16 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
     >
       <Link to="/studio" className={css.link}>
         <Typography
+          className={css.title}
           sx={{
             color: 'text.primary',
             fontFamily: 'Raleway, sans-serif',
             fontWeight: '700',
             fontSize: '26px',
             letterSpacing: '0.03em',
+            '@media screen and (max-width: 768px)': {
+              marginLeft: '1vh',
+            },
           }}
         >
           <span className={css.titleBlue}>Web</span>Studio
@@ -56,11 +60,15 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
           flexDirection: 'row',
           gap: '5vh',
           bgcolor: 'background.default',
+          '@media screen and (max-width: 768px)': {
+            gap: '1.5vh',
+          },
         }}
       >
         <li>
           <Link to="/studio" className={css.link}>
             <Typography
+              className={css.linkText}
               sx={{
                 color: 'text.primary',
                 padding: '0 0 3.1vh 0',
@@ -83,6 +91,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
         <li>
           <Link to="/portofolio" className={css.link}>
             <Typography
+              className={css.linkText}
               sx={{
                 color: 'text.primary',
                 padding: '0 0 3.1vh 0',
@@ -105,6 +114,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
         <li>
           <a href="#footer" onClick={handleClickContact} className={css.link}>
             <Typography
+              className={css.linkText}
               sx={{
                 color: 'text.primary',
                 padding: '0 0 3.1vh 0',
@@ -129,12 +139,16 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
         <ThemeSwitch onToggle={toggleDarkMode} />
       </div>
       <MenuList
+        className={css.contactList}
         sx={{
           display: 'flex',
           flexDirection: 'row',
           gap: '20px',
           bgcolor: 'background.default',
           color: 'text.primary',
+          '@media screen and (max-width: 768px)': {
+            gap: '1vh',
+          },
         }}
       >
         <li sx={{ padding: '0px' }}>
@@ -144,12 +158,17 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
             className={css.link}
           >
             <Typography
+              className={css.linkText}
               sx={{
                 color: 'text.primary',
                 padding: '0',
                 cursor: 'pointer',
                 '&:hover': {
                   color: '#2196F3',
+                },
+                '@media screen and (max-width: 768px)': {
+                  fontSize: '12px',
+                  marginRight: '0',
                 },
               }}
             >
@@ -160,12 +179,16 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
         <li sx={{ padding: '0px' }}>
           <Link target="_blank" to="tel:9051290512" className={css.link}>
             <Typography
+              className={css.linkText}
               sx={{
                 color: 'text.primary',
                 padding: '0',
                 cursor: 'pointer',
                 '&:hover': {
                   color: '#2196F3',
+                },
+                '@media screen and (max-width: 768px)': {
+                  fontSize: '12px',
                 },
               }}
             >

@@ -2,21 +2,36 @@
   width: 100%;
   height: 12vh;
   display: flex;
-  gap: 3vh;
+  gap: 13vh;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .link {
   text-decoration: none;
 }
 
+.linkText {
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
 .titleBlue {
   color: #2196f3;
 }
 
-@media screen and (max-width: 504px) {
+@media screen and (max-width: 768px) {
   .title {
-    font-size: smaller;
+    font-size: 24px;
+  }
+
+  .contactList {
+    flex-wrap: wrap;
+  }
+
+  .navbar {
+    gap: 4.5vh;
   }
 }

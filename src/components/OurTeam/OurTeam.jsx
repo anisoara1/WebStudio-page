@@ -52,8 +52,8 @@ export const OurTeam = () => {
               className={css.firstImg}
               sx={{
                 cursor: 'initial',
-                width: '38vh',
-                height: '38vh',
+                width: '270px',
+                height: '260px',
               }}
             />
             <h3 className={css.title} sx={{ alignItems: 'left' }}>
@@ -128,8 +128,8 @@ export const OurTeam = () => {
               className={css.secondImg}
               sx={{
                 cursor: 'initial',
-                width: '38vh',
-                height: '38vh',
+                width: '270px',
+                height: '260px',
               }}
             ></Box>
             <h3 className={css.title}>Kylie Evans</h3>
@@ -204,8 +204,8 @@ export const OurTeam = () => {
               className={css.thirdImg}
               sx={{
                 cursor: 'initial',
-                width: '38vh',
-                height: '38vh',
+                width: '270px',
+                height: '260px',
               }}
             ></Box>
             <h3 className={css.title}>Ryan Harris</h3>
@@ -278,8 +278,8 @@ export const OurTeam = () => {
               className={css.fourthImg}
               sx={{
                 cursor: 'initial',
-                width: '38vh',
-                height: '38vh',
+                width: '270px',
+                height: '260px',
               }}
             ></Box>
             <h3 className={css.title}>Tyler Moore</h3>

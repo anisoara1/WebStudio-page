@@ -31,7 +31,7 @@ export const Portofolio = () => {
       <Box
         padding="0"
         sx={{
-          padding: '20vh',
+          padding: '20vh 0 20vh 0',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -44,6 +44,7 @@ export const Portofolio = () => {
             size="small"
             className={css.mediaBtn}
             sx={{
+              textTransform: 'none',
               color: '#212121',
               bgcolor: '#F5F4FA',
               padding: '1vh 3vh 1vh 3vh',
@@ -53,12 +54,29 @@ export const Portofolio = () => {
               },
             }}
           >
-            <p className={css.mediaText}>All</p>
+            <Typography className={css.mediaText}>All</Typography>
+          </Button>
+          <Button
+            className={css.mediaBtn}
+            size="small"
+            sx={{
+              textTransform: 'none',
+              color: '#212121',
+              bgcolor: '#F5F4FA',
+              padding: '1vh 3vh 1vh 3vh',
+              '&:hover': {
+                bgcolor: '#2196F3',
+                color: '#FFFFFF',
+              },
+            }}
+          >
+            <Typography className={css.mediaText}>Web-sites</Typography>
           </Button>
           <Button
             size="small"
             className={css.mediaBtn}
             sx={{
+              textTransform: 'none',
               color: '#212121',
               bgcolor: '#F5F4FA',
               padding: '1vh 3vh 1vh 3vh',
@@ -68,12 +86,13 @@ export const Portofolio = () => {
               },
             }}
           >
-            <p className={css.mediaText}> Web-sites</p>
+            <Typography className={css.mediaText}>Apps</Typography>
           </Button>
           <Button
             size="small"
             className={css.mediaBtn}
             sx={{
+              textTransform: 'none',
               color: '#212121',
               bgcolor: '#F5F4FA',
               padding: '1vh 3vh 1vh 3vh',
@@ -83,12 +102,13 @@ export const Portofolio = () => {
               },
             }}
           >
-            <p className={css.mediaText}> Apps</p>
+            <Typography className={css.mediaText}>Design</Typography>
           </Button>
           <Button
             size="small"
             className={css.mediaBtn}
             sx={{
+              textTransform: 'none',
               color: '#212121',
               bgcolor: '#F5F4FA',
               padding: '1vh 3vh 1vh 3vh',
@@ -98,30 +118,24 @@ export const Portofolio = () => {
               },
             }}
           >
-            <p className={css.mediaText}> Design</p>
-          </Button>
-          <Button
-            size="small"
-            className={css.mediaBtn}
-            sx={{
-              color: '#212121',
-              bgcolor: '#F5F4FA',
-              padding: '1vh 3vh 1vh 3vh',
-              '&:hover': {
-                bgcolor: '#2196F3',
-                color: '#FFFFFF',
-              },
-            }}
-          >
-            <p className={css.mediaText}> Marketing</p>
+            <Typography className={css.mediaText}> Marketing</Typography>
           </Button>
         </MenuList>
         <Box
           sx={{
             display: 'grid',
-            gap: 6,
+            gap: '35px',
             gridTemplateColumns: 'repeat(3, 10fr)',
-            /*  boxShadow: cardShadow, */
+            '@media screen and (max-width: 1200px)': {
+              gap: '20px',
+            },
+            '@media screen and (max-width: 768px)': {
+              gridTemplateColumns: 'repeat(2, 10fr)',
+            },
+
+            '@media screen and (max-width: 480px)': {
+              gridTemplateColumns: 'repeat(1, 10fr)',
+            },
           }}
         >
           <Card
@@ -139,10 +153,13 @@ export const Portofolio = () => {
           >
             <Box
               sx={{
-                width: '52vh',
-                height: '42vh',
+                width: '370px',
+                height: '294px',
                 position: 'relative',
                 overflow: 'hidden',
+                '@media screen and (max-width: 768px)': {
+                  width: '354px',
+                },
               }}
               className={css.firstImg}
             >
@@ -182,10 +199,13 @@ export const Portofolio = () => {
           >
             <Box
               sx={{
-                width: '52vh',
-                height: '42vh',
+                width: '370px',
+                height: '294px',
                 position: 'relative',
                 overflow: 'hidden',
+                '@media screen and (max-width: 768px)': {
+                  width: '354px',
+                },
               }}
               className={css.secondImg}
             >
@@ -225,10 +245,13 @@ export const Portofolio = () => {
           >
             <Box
               sx={{
-                width: '52vh',
-                height: '42vh',
+                width: '370px',
+                height: '294px',
                 position: 'relative',
                 overflow: 'hidden',
+                '@media screen and (max-width: 768px)': {
+                  width: '354px',
+                },
               }}
               className={css.thirdImg}
             >
@@ -268,10 +291,13 @@ export const Portofolio = () => {
           >
             <Box
               sx={{
-                width: '52vh',
-                height: '42vh',
+                width: '370px',
+                height: '294px',
                 position: 'relative',
                 overflow: 'hidden',
+                '@media screen and (max-width: 768px)': {
+                  width: '354px',
+                },
               }}
               className={css.fourthImg}
             >
@@ -311,10 +337,13 @@ export const Portofolio = () => {
           >
             <Box
               sx={{
-                width: '52vh',
-                height: '42vh',
+                width: '370px',
+                height: '294px',
                 position: 'relative',
                 overflow: 'hidden',
+                '@media screen and (max-width: 768px)': {
+                  width: '354px',
+                },
               }}
               className={css.fivthImg}
             >
@@ -354,10 +383,13 @@ export const Portofolio = () => {
           >
             <Box
               sx={{
-                width: '52vh',
-                height: '42vh',
+                width: '370px',
+                height: '294px',
                 position: 'relative',
                 overflow: 'hidden',
+                '@media screen and (max-width: 768px)': {
+                  width: '354px',
+                },
               }}
               className={css.sixthImg}
             >
@@ -397,10 +429,13 @@ export const Portofolio = () => {
           >
             <Box
               sx={{
-                width: '52vh',
-                height: '42vh',
+                width: '370px',
+                height: '294px',
                 position: 'relative',
                 overflow: 'hidden',
+                '@media screen and (max-width: 768px)': {
+                  width: '354px',
+                },
               }}
               className={css.seventhImg}
             >
@@ -440,10 +475,13 @@ export const Portofolio = () => {
           >
             <Box
               sx={{
-                width: '52vh',
-                height: '42vh',
+                width: '370px',
+                height: '294px',
                 position: 'relative',
                 overflow: 'hidden',
+                '@media screen and (max-width: 768px)': {
+                  width: '354px',
+                },
               }}
               className={css.eigthImg}
             >
@@ -483,10 +521,13 @@ export const Portofolio = () => {
           >
             <Box
               sx={{
-                width: '52vh',
-                height: '42vh',
+                width: '370px',
+                height: '294px',
                 position: 'relative',
                 overflow: 'hidden',
+                '@media screen and (max-width: 768px)': {
+                  width: '354px',
+                },
               }}
               className={css.ninthImg}
             >

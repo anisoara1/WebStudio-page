@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: row;
   gap: 3vh;
+  padding: 0;
 }
 
 .mediaBtn {
-  margin: 0;
   text-align: center;
   border: none;
   border-radius: 4px;
@@ -13,24 +13,24 @@
   align-items: center;
   background: #f5f4fa;
 }
+
 .mediaText {
-  margin: 0;
-  text-transform: capitalize;
   font-family: Roboto;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 500;
   line-height: 26px;
   letter-spacing: 0.03em;
   text-align: center;
+  white-space: nowrap;
 }
+
 .cardItem {
-  width: 52vh;
-  height: 58vh;
+  width: 370px;
+  height: 404px;
 }
 
 .title {
   margin: 0;
-  font-family: Roboto;
   font-size: 18px;
   font-weight: 700;
   line-height: 36px;
@@ -50,8 +50,8 @@
 
 .hoverOverlay {
   position: absolute;
-  width: 52vh;
-  height: 42vh;
+  width: 370px;
+  height: 294px;
   background: rgba(33, 150, 243, 0.9);
   display: flex;
   align-items: center;
@@ -107,4 +107,19 @@
 
 .ninthImg {
   background: url('../../images/pImg9.jpg') center / cover no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .mediaList {
+    gap: 8px;
+  }
+  .cardItem {
+    width: 354px;
+    height: 440px;
+  }
+
+  .hoverOverlay {
+    width: 354px;
+    height: 440px;
+  }
 }

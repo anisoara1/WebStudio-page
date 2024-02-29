@@ -27,10 +27,18 @@ export const Footer = () => {
       sx={{
         display: 'flex',
         height: '35vh',
-        gap: '20vh',
+        gap: '75px',
         justifyContent: 'center',
         alignItems: 'center',
         bgcolor: theme.palette.mode === 'light' ? '#2F303A' : '#121212',
+        '@media screen and (max-width: 1200px)': {
+          gap: '40px',
+        },
+        '@media screen and (max-width: 768px)': {
+          height: '50vh',
+          flexWrap: 'wrap',
+          justifyContent: 'space-around',
+        },
       }}
       disableGutters
     >
@@ -202,7 +210,7 @@ export const Footer = () => {
           </Fab>
         </MenuList>
       </Box>
-      <Box sx={{ color: '#FFFFFF' }}>
+      <Box className={css.subscribeBox} sx={{ color: '#FFFFFF' }}>
         <h2>SUBSCRIBE TO THE NEWSLETTER </h2>
         <Box className={css.subscribeForm}>
           <TextField
@@ -257,7 +265,10 @@ export const Footer = () => {
               },
             }}
           >
-            Subscribe <TelegramIcon sx={{ marginLeft: '2vh' }} />
+            Subscribe
+            <Link target={'_blank'} to="https://web.telegram.org/k/">
+              <TelegramIcon sx={{ margin: '1.5vh 0  0 2vh', color: 'white' }} />
+            </Link>
           </Button>
         </Box>
         <Box

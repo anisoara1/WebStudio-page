@@ -46,3 +46,9 @@
   flex-direction: column;
   text-align: center;
 }
+
+@media screen and (max-width: 1200px) {
+  .menuList {
+    gap: 20px;
+  }
+}
