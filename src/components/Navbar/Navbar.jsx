@@ -47,7 +47,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
             fontSize: '26px',
             letterSpacing: '0.03em',
             '@media screen and (max-width: 768px)': {
-              marginLeft: '1vh',
+              marginLeft: '2vh',
               fontSize: '24px',
             },
           }}
@@ -68,7 +68,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
           gap: '5vh',
           bgcolor: 'background.default',
           '@media screen and (max-width: 768px)': {
-            gap: '1.5vh',
+            gap: '3vh',
           },
         }}
       >

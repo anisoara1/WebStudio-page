@@ -185,7 +185,6 @@ export const Portofolio = () => {
                 whiteSpace: 'nowrap',
               }}
             >
-              {' '}
               Marketing
             </Typography>
           </Button>
@@ -210,6 +209,7 @@ export const Portofolio = () => {
           <Card
             variant="outlined"
             sx={{
+              padding: '0',
               display: 'flex',
               gap: 2,
               flexDirection: 'column',
@@ -268,6 +268,7 @@ export const Portofolio = () => {
           <Card
             variant="outlined"
             sx={{
+              padding: '0',
               display: 'flex',
               gap: 2,
               flexDirection: 'column',
@@ -326,6 +327,7 @@ export const Portofolio = () => {
           <Card
             variant="outlined"
             sx={{
+              padding: '0',
               display: 'flex',
               gap: 2,
               flexDirection: 'column',
@@ -384,6 +386,7 @@ export const Portofolio = () => {
           <Card
             variant="outlined"
             sx={{
+              padding: '0',
               display: 'flex',
               gap: 2,
               flexDirection: 'column',
@@ -442,6 +445,7 @@ export const Portofolio = () => {
           <Card
             variant="outlined"
             sx={{
+              padding: '0',
               display: 'flex',
               gap: 2,
               flexDirection: 'column',
@@ -500,6 +504,7 @@ export const Portofolio = () => {
           <Card
             variant="outlined"
             sx={{
+              padding: '0',
               display: 'flex',
               gap: 2,
               flexDirection: 'column',
@@ -557,6 +562,7 @@ export const Portofolio = () => {
           <Card
             variant="outlined"
             sx={{
+              padding: '0',
               display: 'flex',
               gap: 2,
               flexDirection: 'column',
@@ -615,6 +621,7 @@ export const Portofolio = () => {
           <Card
             variant="outlined"
             sx={{
+              padding: '0',
               display: 'flex',
               gap: 2,
               flexDirection: 'column',
@@ -673,6 +680,7 @@ export const Portofolio = () => {
           <Card
             variant="outlined"
             sx={{
+              padding: '0',
               display: 'flex',
               gap: 2,
               flexDirection: 'column',
