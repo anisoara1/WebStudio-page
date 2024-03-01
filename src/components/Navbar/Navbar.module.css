@@ -11,22 +11,11 @@
   text-decoration: none;
 }
 
-.linkText {
-  font-weight: 500;
-  line-height: 14px;
-  letter-spacing: 0.02em;
-  text-align: left;
-}
-
 .titleBlue {
   color: #2196f3;
 }
 
 @media screen and (max-width: 768px) {
-  .title {
-    font-size: 24px;
-  }
-
   .contactList {
     flex-wrap: wrap;
   }

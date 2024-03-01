@@ -32,6 +32,13 @@
   gap: 3vh;
 }
 
+.subscribeBox {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .subscribeForm {
   display: flex;
   flex-direction: row;

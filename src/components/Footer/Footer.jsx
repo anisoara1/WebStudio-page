@@ -25,11 +25,12 @@ export const Footer = () => {
       id="footer"
       maxWidth="100%"
       sx={{
+        paddingTop: '60px',
         display: 'flex',
         height: '35vh',
         gap: '75px',
         justifyContent: 'center',
-        alignItems: 'center',
+        alignItems: 'flex-start',
         bgcolor: theme.palette.mode === 'light' ? '#2F303A' : '#121212',
         '@media screen and (max-width: 1200px)': {
           gap: '40px',
@@ -46,9 +47,11 @@ export const Footer = () => {
     >
       <Box
         sx={{
+          marginTop: '-5px',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'flex-start',
+          gap: '20px',
           padding: '0',
           '@media screen and (max-width: 768px)': {
             alignItems: 'center',
@@ -166,10 +169,11 @@ export const Footer = () => {
       </Box>
       <Box
         sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '20px',
           color: '#FFFFFF',
           '@media screen and (max-width: 768px)': {
-            display: 'flex',
-            flexDirection: 'column',
             alignItems: 'center',
             gap: '1vh',
             marginTop: '-2.5vh',
@@ -289,6 +293,7 @@ export const Footer = () => {
           <Button
             className={css.Btn}
             sx={{
+              marginTop: '-3px',
               fontFamily: 'Roboto',
               fontSize: '16px',
               fontWeight: 700,
@@ -321,11 +326,12 @@ export const Footer = () => {
         </Box>
         <Box
           sx={{
+            marginTop: '-15px',
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'center',
             fontStyle: 'italic',
-            fontSize: 'small',
+            fontSize: 'smaller',
             color: '#FFFFFF4D',
           }}
         >
