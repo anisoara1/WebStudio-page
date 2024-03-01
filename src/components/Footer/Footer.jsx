@@ -36,7 +36,7 @@ export const Footer = () => {
         },
         '@media screen and (max-width: 768px)': {
           flexWrap: 'wrap',
-          height: '45vh',
+          height: '600px',
           alignContent: 'center',
           justifyContent: 'space-around',
           gap: '65px',
@@ -330,7 +330,7 @@ export const Footer = () => {
           }}
         >
           <p>Copyright</p>
-          <CopyrightIcon fontSize="small" />
+          <CopyrightIcon fontSize="smaller" />
           <p>Anisoara C.</p>
         </Box>
       </Box>
