@@ -2,6 +2,7 @@ import React, { forwardRef, useEffect } from 'react';
 import css from './Navbar.module.css';
 import { Box, MenuList, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { useTheme } from '@mui/material';
 import ThemeSwitch from 'components/ThemeSwich';
 
 export const Header = forwardRef(({ toggleDarkMode }, ref) => {
@@ -21,13 +22,18 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
       }
     }
   }, []);
+  const theme = useTheme();
+  const borderShadow =
+    theme.palette.mode === 'light'
+      ? 'rgba(33,33,33,0.3)'
+      : 'rgba(255,255,255,0.3)';
   return (
     <Box
       ref={ref}
       sx={{
         bgcolor: 'background.default',
         color: 'text.primary',
-        borderBottom: '2px solid rgba(33, 33, 33, 0.3)',
+        borderBottom: `2px solid ${borderShadow}`,
       }}
       className={css.navbar}
     >
@@ -160,6 +166,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
           bgcolor: 'background.default',
           color: 'text.primary',
           '@media screen and (max-width: 768px)': {
+            flexWrap: 'wrap',
             gap: '1vh',
           },
         }}

@@ -37,7 +37,7 @@ export const Footer = () => {
         },
         '@media screen and (max-width: 768px)': {
           flexWrap: 'wrap',
-          height: '600px',
+          height: '540px',
           alignContent: 'center',
           justifyContent: 'space-around',
           gap: '65px',
@@ -98,7 +98,12 @@ export const Footer = () => {
             >
               <Typography
                 sx={{
-                  fontSize: 'inherit',
+                  fontFamily: 'Roboto',
+                  fontSize: '16px',
+                  fontWeight: '400',
+                  lineHeight: '28px',
+                  letterSpacing: '0.03em',
+                  textAlign: 'left',
                   padding: '0',
                   color: '#FFFFFF4D',
                   cursor: 'pointer',
@@ -125,7 +130,12 @@ export const Footer = () => {
             >
               <Typography
                 sx={{
-                  fontSize: 'inherit',
+                  fontFamily: 'Roboto',
+                  fontSize: '16px',
+                  fontWeight: '400',
+                  lineHeight: '28px',
+                  letterSpacing: '0.03em',
+                  textAlign: 'left',
                   padding: '0',
                   color: '#FFFFFF4D',
                   cursor: 'pointer',
@@ -152,7 +162,12 @@ export const Footer = () => {
             >
               <Typography
                 sx={{
-                  fontSize: 'inherit',
+                  fontFamily: 'Roboto',
+                  fontSize: '16px',
+                  fontWeight: '400',
+                  lineHeight: '28px',
+                  letterSpacing: '0.03em',
+                  textAlign: 'left',
                   padding: '0',
                   color: '#FFFFFF4D',
                   cursor: 'pointer',
@@ -175,8 +190,7 @@ export const Footer = () => {
           color: '#FFFFFF',
           '@media screen and (max-width: 768px)': {
             alignItems: 'center',
-            gap: '1vh',
-            marginTop: '-2.5vh',
+            gap: '1.5vh',
           },
         }}
       >
@@ -261,7 +275,15 @@ export const Footer = () => {
         >
           SUBSCRIBE TO THE NEWSLETTER
         </Typography>
-        <Box className={css.subscribeForm}>
+        <Box
+          className={css.subscribeForm}
+          sx={{
+            '@media screen and (max-width: 768px)': {
+              alignItems: 'center',
+              gap: '3vh',
+            },
+          }}
+        >
           <TextField
             id="outlined-basic"
             label="E-mail"
@@ -279,13 +301,18 @@ export const Footer = () => {
                   color: '#FFFFFF4D',
                 },
               '& .MuiInputLabel-root': {
+                fontFamily: 'Roboto',
+                fontSize: '16px',
+                fontWeight: '400',
+                lineHeight: '28px',
+                letterSpacing: '0.03em',
                 color: '#FFFFFF4D',
               },
               '& .MuiInputLabel-root.Mui-focused': {
                 color: 'white',
               },
               '@media screen and (max-width: 768px)': {
-                width: '30vh',
+                width: '60vh',
               },
             }}
           />

@@ -22,12 +22,20 @@ export const Portofolio = () => {
   const [isHovered8, setIsHovered8] = useState(false);
   const [isHovered9, setIsHovered9] = useState(false);
   const theme = useTheme();
+  const borderShadow =
+    theme.palette.mode === 'light'
+      ? 'rgba(33,33,33,0.3)'
+      : 'rgba(255,255,255,0.3)';
   const cardShadow =
     theme.palette.mode === 'light'
       ? '0px 3px 6px 3px rgba(33,33,33,0.3)'
       : '0px 3px 6px 3px rgba(255,255,255,0.3)';
   return (
-    <Container maxWidth="100%" disableGutters>
+    <Container
+      maxWidth="100%"
+      disableGutters
+      sx={{ borderBottom: `2px solid ${borderShadow}` }}
+    >
       <Box
         padding="0"
         sx={{
@@ -54,7 +62,19 @@ export const Portofolio = () => {
               },
             }}
           >
-            <Typography className={css.mediaText}>All</Typography>
+            <Typography
+              sx={{
+                fontfamily: 'Roboto',
+                fontSize: '16px',
+                fontWeight: '500',
+                lineHeight: '26px',
+                letterSpacing: '0.03em',
+                textAlign: 'center',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              All
+            </Typography>
           </Button>
           <Button
             className={css.mediaBtn}
@@ -70,7 +90,19 @@ export const Portofolio = () => {
               },
             }}
           >
-            <Typography className={css.mediaText}>Web-sites</Typography>
+            <Typography
+              sx={{
+                fontfamily: 'Roboto',
+                fontSize: '16px',
+                fontWeight: '500',
+                lineHeight: '26px',
+                letterSpacing: '0.03em',
+                textAlign: 'center',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              Web-sites
+            </Typography>
           </Button>
           <Button
             size="small"
@@ -86,7 +118,19 @@ export const Portofolio = () => {
               },
             }}
           >
-            <Typography className={css.mediaText}>Apps</Typography>
+            <Typography
+              sx={{
+                fontfamily: 'Roboto',
+                fontSize: '16px',
+                fontWeight: '500',
+                lineHeight: '26px',
+                letterSpacing: '0.03em',
+                textAlign: 'center',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              Apps
+            </Typography>
           </Button>
           <Button
             size="small"
@@ -102,7 +146,19 @@ export const Portofolio = () => {
               },
             }}
           >
-            <Typography className={css.mediaText}>Design</Typography>
+            <Typography
+              sx={{
+                fontfamily: 'Roboto',
+                fontSize: '16px',
+                fontWeight: '500',
+                lineHeight: '26px',
+                letterSpacing: '0.03em',
+                textAlign: 'center',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              Design
+            </Typography>
           </Button>
           <Button
             size="small"
@@ -118,7 +174,20 @@ export const Portofolio = () => {
               },
             }}
           >
-            <Typography className={css.mediaText}> Marketing</Typography>
+            <Typography
+              sx={{
+                fontfamily: 'Roboto',
+                fontSize: '16px',
+                fontWeight: '500',
+                lineHeight: '26px',
+                letterSpacing: '0.03em',
+                textAlign: 'center',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              {' '}
+              Marketing
+            </Typography>
           </Button>
         </MenuList>
         <Box
@@ -170,8 +239,20 @@ export const Portofolio = () => {
                 }}
               >
                 <Typography
-                  sx={{ padding: '6vh 10vh 12vh 4vh' }}
-                  className={css.textOveraly}
+                  sx={{
+                    fontFamily: 'Roboto',
+                    fontSize: '16px',
+                    fontWeight: '400',
+                    lineHeight: '28px',
+                    letterSpacing: '0.03em',
+                    textAlign: 'left',
+                    color: '#ffffff',
+                    padding: '6vh 10vh 12vh 4vh',
+                    '@media screen and (max-width: 768px)': {
+                      padding: '0vh 12vh 17vh 4vh',
+                      justifyContent: 'center',
+                    },
+                  }}
                 >
                   Technoduck is a state-of-the-art coronavirus distribution
                   platform. Companies use this platform for digital espionage
@@ -216,8 +297,20 @@ export const Portofolio = () => {
                 }}
               >
                 <Typography
-                  sx={{ padding: '6vh 10vh 12vh 4vh' }}
-                  className={css.textOveraly}
+                  sx={{
+                    fontFamily: 'Roboto',
+                    fontSize: '16px',
+                    fontWeight: '400',
+                    lineHeight: '28px',
+                    letterSpacing: '0.03em',
+                    textAlign: 'left',
+                    color: '#ffffff',
+                    padding: '6vh 10vh 12vh 4vh',
+                    '@media screen and (max-width: 768px)': {
+                      padding: '0vh 12vh 17vh 4vh',
+                      justifyContent: 'center',
+                    },
+                  }}
                 >
                   Technoduck is a state-of-the-art coronavirus distribution
                   platform. Companies use this platform for digital espionage
@@ -262,8 +355,20 @@ export const Portofolio = () => {
                 }}
               >
                 <Typography
-                  sx={{ padding: '6vh 10vh 12vh 4vh' }}
-                  className={css.textOveraly}
+                  sx={{
+                    fontFamily: 'Roboto',
+                    fontSize: '16px',
+                    fontWeight: '400',
+                    lineHeight: '28px',
+                    letterSpacing: '0.03em',
+                    textAlign: 'left',
+                    color: '#ffffff',
+                    padding: '6vh 10vh 12vh 4vh',
+                    '@media screen and (max-width: 768px)': {
+                      padding: '0vh 12vh 17vh 4vh',
+                      justifyContent: 'center',
+                    },
+                  }}
                 >
                   Technoduck is a state-of-the-art coronavirus distribution
                   platform. Companies use this platform for digital espionage
@@ -308,8 +413,20 @@ export const Portofolio = () => {
                 }}
               >
                 <Typography
-                  sx={{ padding: '6vh 10vh 12vh 4vh' }}
-                  className={css.textOveraly}
+                  sx={{
+                    fontFamily: 'Roboto',
+                    fontSize: '16px',
+                    fontWeight: '400',
+                    lineHeight: '28px',
+                    letterSpacing: '0.03em',
+                    textAlign: 'left',
+                    color: '#ffffff',
+                    padding: '6vh 10vh 12vh 4vh',
+                    '@media screen and (max-width: 768px)': {
+                      padding: '0vh 12vh 17vh 4vh',
+                      justifyContent: 'center',
+                    },
+                  }}
                 >
                   Technoduck is a state-of-the-art coronavirus distribution
                   platform. Companies use this platform for digital espionage
@@ -354,8 +471,20 @@ export const Portofolio = () => {
                 }}
               >
                 <Typography
-                  sx={{ padding: '6vh 10vh 12vh 4vh' }}
-                  className={css.textOveraly}
+                  sx={{
+                    fontFamily: 'Roboto',
+                    fontSize: '16px',
+                    fontWeight: '400',
+                    lineHeight: '28px',
+                    letterSpacing: '0.03em',
+                    textAlign: 'left',
+                    color: '#ffffff',
+                    padding: '6vh 10vh 12vh 4vh',
+                    '@media screen and (max-width: 768px)': {
+                      padding: '0vh 12vh 17vh 4vh',
+                      justifyContent: 'center',
+                    },
+                  }}
                 >
                   Technoduck is a state-of-the-art coronavirus distribution
                   platform. Companies use this platform for digital espionage
@@ -400,8 +529,19 @@ export const Portofolio = () => {
                 }}
               >
                 <Typography
-                  sx={{ padding: '6vh 10vh 12vh 4vh' }}
-                  className={css.textOveraly}
+                  sx={{
+                    fontFamily: 'Roboto',
+                    fontSize: '16px',
+                    fontWeight: '400',
+                    lineHeight: '28px',
+                    letterSpacing: '0.03em',
+                    textAlign: 'left',
+                    color: '#ffffff',
+                    '@media screen and (max-width: 768px)': {
+                      padding: '0vh 12vh 17vh 4vh',
+                      justifyContent: 'center',
+                    },
+                  }}
                 >
                   Technoduck is a state-of-the-art coronavirus distribution
                   platform. Companies use this platform for digital espionage
@@ -446,8 +586,20 @@ export const Portofolio = () => {
                 }}
               >
                 <Typography
-                  sx={{ padding: '6vh 10vh 12vh 4vh' }}
-                  className={css.textOveraly}
+                  sx={{
+                    fontFamily: 'Roboto',
+                    fontSize: '16px',
+                    fontWeight: '400',
+                    lineHeight: '28px',
+                    letterSpacing: '0.03em',
+                    textAlign: 'left',
+                    color: '#ffffff',
+                    padding: '6vh 10vh 12vh 4vh',
+                    '@media screen and (max-width: 768px)': {
+                      padding: '0vh 12vh 17vh 4vh',
+                      justifyContent: 'center',
+                    },
+                  }}
                 >
                   Technoduck is a state-of-the-art coronavirus distribution
                   platform. Companies use this platform for digital espionage
@@ -492,8 +644,20 @@ export const Portofolio = () => {
                 }}
               >
                 <Typography
-                  sx={{ padding: '6vh 10vh 12vh 4vh' }}
-                  className={css.textOveraly}
+                  sx={{
+                    fontFamily: 'Roboto',
+                    fontSize: '16px',
+                    fontWeight: '400',
+                    lineHeight: '28px',
+                    letterSpacing: '0.03em',
+                    textAlign: 'left',
+                    color: '#ffffff',
+                    padding: '6vh 10vh 12vh 4vh',
+                    '@media screen and (max-width: 768px)': {
+                      padding: '0vh 12vh 17vh 4vh',
+                      justifyContent: 'center',
+                    },
+                  }}
                 >
                   Technoduck is a state-of-the-art coronavirus distribution
                   platform. Companies use this platform for digital espionage
@@ -538,8 +702,20 @@ export const Portofolio = () => {
                 }}
               >
                 <Typography
-                  sx={{ padding: '6vh 10vh 12vh 4vh' }}
-                  className={css.textOveraly}
+                  sx={{
+                    fontFamily: 'Roboto',
+                    fontSize: '16px',
+                    fontWeight: '400',
+                    lineHeight: '28px',
+                    letterSpacing: '0.03em',
+                    textAlign: 'left',
+                    color: '#ffffff',
+                    padding: '6vh 10vh 12vh 4vh',
+                    '@media screen and (max-width: 768px)': {
+                      padding: '0vh 12vh 17vh 4vh',
+                      justifyContent: 'center',
+                    },
+                  }}
                 >
                   Technoduck is a state-of-the-art coronavirus distribution
                   platform. Companies use this platform for digital espionage
