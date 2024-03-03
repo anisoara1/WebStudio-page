@@ -46,7 +46,7 @@
   }
 
   .icon {
-    width: 10vh;
+    width: 13vh;
     height: 7vh;
   }
 }
@@ -58,6 +58,11 @@
   .iconCard {
     width: 312px;
   }
+
+  .icon {
+    width: 27vh;
+    height: 10vh;
+  }
 }
 
 @media screen and (max-width: 730px) {
@@ -68,10 +73,20 @@
   .mainTitle {
     font-size: 24px;
   }
+
+  .icon {
+    width: 10vh;
+    height: 6vh;
+  }
 }
 
 @media screen and (max-width: 450px) {
   .menuList {
     gap: 30px;
+  }
+
+  .icon {
+    width: 10vh;
+    height: 6vh;
   }
 }

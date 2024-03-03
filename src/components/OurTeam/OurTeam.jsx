@@ -34,13 +34,13 @@ export const OurTeam = () => {
           justifyContent: 'center',
           bgcolor: theme.palette.mode === 'light' ? '#F5F4FA' : '#121212',
           '@media screen and (max-width: 1160px)': {
-            height: '180vh',
+            height: '320vh',
           },
           '@media screen and (max-width: 850px)': {
-            height: '345vh',
+            height: '690vh',
           },
           '@media screen and (max-width: 450px)': {
-            height: '260vh',
+            height: '320vh',
           },
         }}
       >

@@ -33,14 +33,14 @@ export const Features = () => {
           alignItems: 'flex-end',
           justifyContent: ' space-evenly',
           '@media screen and (max-width: 1160px)': {
-            height: '80vh',
+            height: '150vh',
             alignItems: 'center',
           },
           '@media screen and (max-width: 730px)': {
             height: '145vh',
           },
           '@media screen and (max-width: 450px)': {
-            height: '150vh',
+            height: '180vh',
           },
         }}
       >

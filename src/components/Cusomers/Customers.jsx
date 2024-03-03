@@ -30,8 +30,11 @@ export const Customers = () => {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: ' center',
+          '@media screen and (max-width: 1160px)': {
+            height: '85vh',
+          },
           '@media screen and (max-width: 850px)': {
-            height: '75vh',
+            height: '135vh',
           },
           '@media screen and (max-width: 730px)': {
             height: '55vh',
@@ -40,7 +43,7 @@ export const Customers = () => {
             height: '70vh',
           },
           '@media screen and (max-width: 388px)': {
-            height: '115vh',
+            height: '135vh',
           },
         }}
       >
