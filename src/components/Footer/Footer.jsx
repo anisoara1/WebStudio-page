@@ -25,22 +25,30 @@ export const Footer = () => {
       id="footer"
       maxWidth="100%"
       sx={{
-        paddingTop: '60px',
+        padding: '8vh 2vh 0 2vh',
         display: 'flex',
         height: '35vh',
-        gap: '75px',
-        justifyContent: 'center',
+        gap: '40px',
+        justifyContent: 'space-evenly',
         alignItems: 'flex-start',
         bgcolor: theme.palette.mode === 'light' ? '#2F303A' : '#121212',
         '@media screen and (max-width: 1200px)': {
           gap: '40px',
         },
-        '@media screen and (max-width: 768px)': {
+        '@media screen and (max-width: 1100px)': {
           flexWrap: 'wrap',
           height: '540px',
           alignContent: 'center',
           justifyContent: 'space-around',
           gap: '65px',
+        },
+        '@media screen and (max-width: 600px)': {
+          gap: '40px',
+          height: '590px',
+        },
+        '@media screen and (max-width: 450px)': {
+          gap: '30px',
+          height: '620px',
         },
       }}
       disableGutters
@@ -53,7 +61,7 @@ export const Footer = () => {
           alignItems: 'flex-start',
           gap: '20px',
           padding: '0',
-          '@media screen and (max-width: 768px)': {
+          '@media screen and (max-width:850px)': {
             alignItems: 'center',
             gap: '2vh',
           },
@@ -85,7 +93,7 @@ export const Footer = () => {
             gap: '1vh',
             color: ' #ffffff',
             cursor: 'pointer',
-            '@media screen and (max-width: 768px)': {
+            '@media screen and (max-width: 850px)': {
               alignItems: 'center',
             },
           }}
@@ -109,6 +117,9 @@ export const Footer = () => {
                   cursor: 'pointer',
                   '&:hover': {
                     color: 'white',
+                  },
+                  '@media screen and (max-width: 600px)': {
+                    fontSize: '14px',
                   },
                 }}
               >
@@ -142,6 +153,9 @@ export const Footer = () => {
                   '&:hover': {
                     color: 'white',
                   },
+                  '@media screen and (max-width: 600px)': {
+                    fontSize: '14px',
+                  },
                 }}
               >
                 info@devstudio.com
@@ -174,6 +188,9 @@ export const Footer = () => {
                   '&:hover': {
                     color: 'white',
                   },
+                  '@media screen and (max-width: 600px)': {
+                    fontSize: '14px',
+                  },
                 }}
               >
                 +1 212-772-4150
@@ -188,7 +205,7 @@ export const Footer = () => {
           flexDirection: 'column',
           gap: '20px',
           color: '#FFFFFF',
-          '@media screen and (max-width: 768px)': {
+          '@media screen and (max-width: 850px)': {
             alignItems: 'center',
             gap: '1.5vh',
           },
@@ -202,7 +219,7 @@ export const Footer = () => {
             lineHeight: '16px',
             letterSpacing: '0.03em',
             textAlign: 'center',
-            '@media screen and (max-width: 768px)': {
+            '@media screen and (max-width: 850px)': {
               margin: '0',
             },
           }}
@@ -278,9 +295,8 @@ export const Footer = () => {
         <Box
           className={css.subscribeForm}
           sx={{
-            '@media screen and (max-width: 768px)': {
+            '@media screen and (max-width: 850px)': {
               alignItems: 'center',
-              gap: '3vh',
             },
           }}
         >
@@ -291,7 +307,6 @@ export const Footer = () => {
             size="small"
             sx={{
               width: '50vh',
-              height: '6vh',
               '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': {
                 borderColor: '#FFFFFF4D',
               },
@@ -307,12 +322,21 @@ export const Footer = () => {
                 lineHeight: '28px',
                 letterSpacing: '0.03em',
                 color: '#FFFFFF4D',
+                '@media screen and (max-width: 600px)': {
+                  fontSize: '14px',
+                },
               },
               '& .MuiInputLabel-root.Mui-focused': {
                 color: 'white',
               },
-              '@media screen and (max-width: 768px)': {
+              '@media screen and (max-width: 850px)': {
                 width: '500px',
+              },
+              '@media screen and (max-width: 600px)': {
+                width: '390px',
+              },
+              '@media screen and (max-width: 450px)': {
+                width: '290px',
               },
             }}
           />

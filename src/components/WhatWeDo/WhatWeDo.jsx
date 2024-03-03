@@ -15,6 +15,9 @@ export const WhatWeDo = () => {
         justifyContent: 'center',
         alignItems: 'center',
         gap: '20px',
+        '@media screen and (max-width: 1160px)': {
+          display: 'none',
+        },
       }}
     >
       <h1 className={css.mainTitle}>What we do</h1>

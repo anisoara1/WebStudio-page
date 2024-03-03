@@ -4,6 +4,7 @@ import { Box, MenuList, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { useTheme } from '@mui/material';
 import ThemeSwitch from 'components/ThemeSwich';
+import MenuIcon from '@mui/icons-material/Menu';
 
 export const Header = forwardRef(({ toggleDarkMode }, ref) => {
   const handleClickContact = e => {
@@ -31,6 +32,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
     <Box
       ref={ref}
       sx={{
+        height: '80px',
         bgcolor: 'background.default',
         color: 'text.primary',
         borderBottom: `2px solid ${borderShadow}`,
@@ -46,7 +48,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
             fontWeight: '700',
             fontSize: '26px',
             letterSpacing: '0.03em',
-            '@media screen and (max-width: 768px)': {
+            '@media screen and (max-width: 850px)': {
               marginLeft: '2vh',
               fontSize: '24px',
             },
@@ -57,7 +59,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
       </Link>
       <MenuList
         sx={{
-          marginTop: '3.5vh',
+          marginTop: '2.5vh',
           fontFamily: 'Roboto, sans-serif',
           fontWeight: '400',
           fontSize: '18px',
@@ -65,10 +67,10 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
           padding: '0',
           display: 'flex',
           flexDirection: 'row',
-          gap: '5vh',
+          gap: '20px',
           bgcolor: 'background.default',
-          '@media screen and (max-width: 768px)': {
-            gap: '3vh',
+          '@media screen and (max-width: 600px)': {
+            display: 'none',
           },
         }}
       >
@@ -82,7 +84,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
                 lineHeight: '16px',
                 letterSpacing: '0.02em',
                 color: 'text.primary',
-                padding: '0 0 3.1vh 0',
+                padding: '0 0 22px 0',
                 cursor: 'pointer',
                 '&:hover': {
                   color: '#2196F3',
@@ -109,7 +111,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
                 lineHeight: '16px',
                 letterSpacing: '0.02em',
                 color: 'text.primary',
-                padding: '0 0 3.1vh 0',
+                padding: '0 0 22px 0',
                 cursor: 'pointer',
                 '&:hover': {
                   color: '#2196F3',
@@ -136,7 +138,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
                 lineHeight: '16px',
                 letterSpacing: '0.02em',
                 color: 'text.primary',
-                padding: '0 0 3.1vh 0',
+                padding: '0 0 22px 0',
                 cursor: 'pointer',
                 '&:hover': {
                   color: '#2196F3',
@@ -160,14 +162,18 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
       <MenuList
         className={css.contactList}
         sx={{
+          padding: '0',
           display: 'flex',
           flexDirection: 'row',
+          alignItems: 'center',
           gap: '20px',
           bgcolor: 'background.default',
           color: 'text.primary',
-          '@media screen and (max-width: 768px)': {
+          '@media screen and (max-width: 850px)': {
             flexWrap: 'wrap',
-            gap: '1vh',
+            '@media screen and (max-width: 600px)': {
+              display: 'none',
+            },
           },
         }}
       >
@@ -225,6 +231,18 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
           </Link>
         </li>
       </MenuList>
+      <MenuIcon
+        sx={{
+          display: 'block',
+          '&:hover': {
+            color: '#2196F3',
+            cursor: 'pointer',
+          },
+          '@media screen and (min-width: 601px)': {
+            display: 'none',
+          },
+        }}
+      />
     </Box>
   );
 });

@@ -13,29 +13,35 @@ export const OurTeam = () => {
     theme.palette.mode === 'light'
       ? '0px 3px 6px 3px rgba(33,33,33,0.3)'
       : '0px 3px 6px 3px rgba(255,255,255,0.3)';
-  /*   const borderShadow =
-    theme.palette.mode === 'light'
-      ? '0px 2px 3px 0px rgba(33,33,33,0.3)'
-      : '0px 2px 3px 0px rgba(255,255,255,0.3)'; */
+
   return (
     <Container
       maxWidth="100%"
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        /* boxShadow: borderShadow, */
       }}
       disableGutters
     >
       <Box
         padding="0"
         sx={{
-          height: '100vh',
+          padding: '0 10px',
+          height: '90vh',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
           bgcolor: theme.palette.mode === 'light' ? '#F5F4FA' : '#121212',
+          '@media screen and (max-width: 1160px)': {
+            height: '180vh',
+          },
+          '@media screen and (max-width: 850px)': {
+            height: '345vh',
+          },
+          '@media screen and (max-width: 450px)': {
+            height: '260vh',
+          },
         }}
       >
         <h1 className={css.mainTitle}>Our Team</h1>
@@ -54,6 +60,18 @@ export const OurTeam = () => {
                 cursor: 'initial',
                 width: '270px',
                 height: '260px',
+                '@media screen and (max-width: 1160px)': {
+                  width: '354px',
+                  height: '374px',
+                },
+                '@media screen and (max-width: 850px)': {
+                  width: '450px',
+                  height: '460px',
+                },
+                '@media screen and (max-width: 450px)': {
+                  width: '270px',
+                  height: '260px',
+                },
               }}
             />
             <h3 className={css.title} sx={{ alignItems: 'left' }}>
@@ -130,6 +148,18 @@ export const OurTeam = () => {
                 cursor: 'initial',
                 width: '270px',
                 height: '260px',
+                '@media screen and (max-width: 1160px)': {
+                  width: '354px',
+                  height: '374px',
+                },
+                '@media screen and (max-width: 850px)': {
+                  width: '450px',
+                  height: '460px',
+                },
+                '@media screen and (max-width: 450px)': {
+                  width: '270px',
+                  height: '260px',
+                },
               }}
             ></Box>
             <h3 className={css.title}>Kylie Evans</h3>
@@ -206,6 +236,18 @@ export const OurTeam = () => {
                 cursor: 'initial',
                 width: '270px',
                 height: '260px',
+                '@media screen and (max-width: 1160px)': {
+                  width: '354px',
+                  height: '374px',
+                },
+                '@media screen and (max-width: 850px)': {
+                  width: '450px',
+                  height: '460px',
+                },
+                '@media screen and (max-width: 450px)': {
+                  width: '270px',
+                  height: '260px',
+                },
               }}
             ></Box>
             <h3 className={css.title}>Ryan Harris</h3>
@@ -280,6 +322,18 @@ export const OurTeam = () => {
                 cursor: 'initial',
                 width: '270px',
                 height: '260px',
+                '@media screen and (max-width: 1160px)': {
+                  width: '354px',
+                  height: '374px',
+                },
+                '@media screen and (max-width: 850px)': {
+                  width: '450px',
+                  height: '480px',
+                },
+                '@media screen and (max-width: 450px)': {
+                  width: '270px',
+                  height: '260px',
+                },
               }}
             ></Box>
             <h3 className={css.title}>Tyler Moore</h3>

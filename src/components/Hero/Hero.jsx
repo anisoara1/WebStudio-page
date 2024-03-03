@@ -23,7 +23,14 @@ export const Hero = () => {
             letterSpacing: '0.06em',
             textAlign: 'center',
             textTransform: 'none',
+            padding: '0 2vh',
             color: ' hsla(0, 0%, 100%, 1)',
+            '@media screen and (max-width: 850px)': {
+              fontSize: '36px',
+            },
+            '@media screen and (max-width: 600px)': {
+              fontSize: '26px',
+            },
           }}
         >
           EFFECTIVE SOLUTIONS FOR <br />

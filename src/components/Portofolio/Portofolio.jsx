@@ -34,7 +34,9 @@ export const Portofolio = () => {
     <Container
       maxWidth="100%"
       disableGutters
-      sx={{ borderBottom: `2px solid ${borderShadow}` }}
+      sx={{
+        borderBottom: `2px solid ${borderShadow}`,
+      }}
     >
       <Box
         padding="0"
@@ -44,10 +46,15 @@ export const Portofolio = () => {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'space-evenly',
-          gap: '5vh',
+          '@media screen and (max-width: 1100px)': {
+            padding: '10vh 0 10vh 0',
+          },
         }}
       >
-        <MenuList className={css.mediaList} sx={{ margin: '-2vh 0 3vh 0 ' }}>
+        <MenuList
+          className={css.mediaList}
+          sx={{ margin: '-2vh 0 3vh 0 ', padding: '0 10px' }}
+        >
           <Button
             size="small"
             className={css.mediaBtn}
@@ -197,11 +204,11 @@ export const Portofolio = () => {
             '@media screen and (max-width: 1200px)': {
               gap: '20px',
             },
-            '@media screen and (max-width: 768px)': {
+            '@media screen and (max-width: 1100px)': {
               gridTemplateColumns: 'repeat(2, 10fr)',
             },
 
-            '@media screen and (max-width: 480px)': {
+            '@media screen and (max-width: 730px)': {
               gridTemplateColumns: 'repeat(1, 10fr)',
             },
           }}
@@ -226,8 +233,17 @@ export const Portofolio = () => {
                 height: '294px',
                 position: 'relative',
                 overflow: 'hidden',
-                '@media screen and (max-width: 768px)': {
+                '@media screen and (max-width: 850px)': {
                   width: '354px',
+                },
+                '@media screen and (max-width: 730px)': {
+                  width: '450px',
+                },
+                '@media screen and (max-width: 450px)': {
+                  width: '370px',
+                },
+                '@media screen and (max-width: 370px)': {
+                  width: '324px',
                 },
               }}
               className={css.firstImg}
@@ -247,10 +263,13 @@ export const Portofolio = () => {
                     letterSpacing: '0.03em',
                     textAlign: 'left',
                     color: '#ffffff',
-                    padding: '6vh 10vh 12vh 4vh',
-                    '@media screen and (max-width: 768px)': {
+                    padding: '9vh 10vh 12vh 4vh',
+                    '@media screen and (max-width: 850px)': {
                       padding: '0vh 12vh 17vh 4vh',
                       justifyContent: 'center',
+                    },
+                    '@media screen and (max-width: 450px)': {
+                      padding: '3vh 10vh 12vh 4vh',
                     },
                   }}
                 >
@@ -285,8 +304,17 @@ export const Portofolio = () => {
                 height: '294px',
                 position: 'relative',
                 overflow: 'hidden',
-                '@media screen and (max-width: 768px)': {
+                '@media screen and (max-width: 850px)': {
                   width: '354px',
+                },
+                '@media screen and (max-width: 730px)': {
+                  width: '450px',
+                },
+                '@media screen and (max-width: 450px)': {
+                  width: '370px',
+                },
+                '@media screen and (max-width: 370px)': {
+                  width: '324px',
                 },
               }}
               className={css.secondImg}
@@ -306,10 +334,13 @@ export const Portofolio = () => {
                     letterSpacing: '0.03em',
                     textAlign: 'left',
                     color: '#ffffff',
-                    padding: '6vh 10vh 12vh 4vh',
-                    '@media screen and (max-width: 768px)': {
+                    padding: '9vh 10vh 12vh 4vh',
+                    '@media screen and (max-width: 850px)': {
                       padding: '0vh 12vh 17vh 4vh',
                       justifyContent: 'center',
+                    },
+                    '@media screen and (max-width: 450px)': {
+                      padding: '3vh 10vh 12vh 4vh',
                     },
                   }}
                 >
@@ -344,8 +375,17 @@ export const Portofolio = () => {
                 height: '294px',
                 position: 'relative',
                 overflow: 'hidden',
-                '@media screen and (max-width: 768px)': {
+                '@media screen and (max-width: 850px)': {
                   width: '354px',
+                  '@media screen and (max-width: 730px)': {
+                    width: '450px',
+                  },
+                  '@media screen and (max-width: 450px)': {
+                    width: '370px',
+                  },
+                  '@media screen and (max-width: 370px)': {
+                    width: '324px',
+                  },
                 },
               }}
               className={css.thirdImg}
@@ -365,10 +405,13 @@ export const Portofolio = () => {
                     letterSpacing: '0.03em',
                     textAlign: 'left',
                     color: '#ffffff',
-                    padding: '6vh 10vh 12vh 4vh',
-                    '@media screen and (max-width: 768px)': {
+                    padding: '9vh 10vh 12vh 4vh',
+                    '@media screen and (max-width: 850px)': {
                       padding: '0vh 12vh 17vh 4vh',
                       justifyContent: 'center',
+                    },
+                    '@media screen and (max-width: 450px)': {
+                      padding: '3vh 10vh 12vh 4vh',
                     },
                   }}
                 >
@@ -403,8 +446,17 @@ export const Portofolio = () => {
                 height: '294px',
                 position: 'relative',
                 overflow: 'hidden',
-                '@media screen and (max-width: 768px)': {
+                '@media screen and (max-width: 850px)': {
                   width: '354px',
+                  '@media screen and (max-width: 730px)': {
+                    width: '450px',
+                  },
+                  '@media screen and (max-width: 450px)': {
+                    width: '370px',
+                  },
+                  '@media screen and (max-width: 370px)': {
+                    width: '324px',
+                  },
                 },
               }}
               className={css.fourthImg}
@@ -424,10 +476,13 @@ export const Portofolio = () => {
                     letterSpacing: '0.03em',
                     textAlign: 'left',
                     color: '#ffffff',
-                    padding: '6vh 10vh 12vh 4vh',
+                    padding: '9vh 10vh 12vh 4vh',
                     '@media screen and (max-width: 768px)': {
                       padding: '0vh 12vh 17vh 4vh',
                       justifyContent: 'center',
+                    },
+                    '@media screen and (max-width: 450px)': {
+                      padding: '3vh 10vh 12vh 4vh',
                     },
                   }}
                 >
@@ -462,8 +517,17 @@ export const Portofolio = () => {
                 height: '294px',
                 position: 'relative',
                 overflow: 'hidden',
-                '@media screen and (max-width: 768px)': {
+                '@media screen and (max-width: 850px)': {
                   width: '354px',
+                  '@media screen and (max-width: 730px)': {
+                    width: '450px',
+                  },
+                  '@media screen and (max-width: 450px)': {
+                    width: '370px',
+                  },
+                  '@media screen and (max-width: 370px)': {
+                    width: '324px',
+                  },
                 },
               }}
               className={css.fivthImg}
@@ -483,10 +547,13 @@ export const Portofolio = () => {
                     letterSpacing: '0.03em',
                     textAlign: 'left',
                     color: '#ffffff',
-                    padding: '6vh 10vh 12vh 4vh',
-                    '@media screen and (max-width: 768px)': {
+                    padding: '9vh 10vh 12vh 4vh',
+                    '@media screen and (max-width: 850px)': {
                       padding: '0vh 12vh 17vh 4vh',
                       justifyContent: 'center',
+                    },
+                    '@media screen and (max-width: 450px)': {
+                      padding: '3vh 10vh 12vh 4vh',
                     },
                   }}
                 >
@@ -521,8 +588,17 @@ export const Portofolio = () => {
                 height: '294px',
                 position: 'relative',
                 overflow: 'hidden',
-                '@media screen and (max-width: 768px)': {
+                '@media screen and (max-width: 850px)': {
                   width: '354px',
+                  '@media screen and (max-width: 730px)': {
+                    width: '450px',
+                  },
+                  '@media screen and (max-width: 450px)': {
+                    width: '370px',
+                  },
+                  '@media screen and (max-width: 370px)': {
+                    width: '324px',
+                  },
                 },
               }}
               className={css.sixthImg}
@@ -542,9 +618,13 @@ export const Portofolio = () => {
                     letterSpacing: '0.03em',
                     textAlign: 'left',
                     color: '#ffffff',
-                    '@media screen and (max-width: 768px)': {
+                    padding: '9vh 10vh 12vh 4vh',
+                    '@media screen and (max-width: 850px)': {
                       padding: '0vh 12vh 17vh 4vh',
                       justifyContent: 'center',
+                    },
+                    '@media screen and (max-width: 450px)': {
+                      padding: '3vh 10vh 12vh 4vh',
                     },
                   }}
                 >
@@ -579,8 +659,17 @@ export const Portofolio = () => {
                 height: '294px',
                 position: 'relative',
                 overflow: 'hidden',
-                '@media screen and (max-width: 768px)': {
+                '@media screen and (max-width: 1200px)': {
                   width: '354px',
+                  '@media screen and (max-width: 730px)': {
+                    width: '450px',
+                  },
+                  '@media screen and (max-width: 450px)': {
+                    width: '370px',
+                  },
+                  '@media screen and (max-width: 370px)': {
+                    width: '324px',
+                  },
                 },
               }}
               className={css.seventhImg}
@@ -600,10 +689,13 @@ export const Portofolio = () => {
                     letterSpacing: '0.03em',
                     textAlign: 'left',
                     color: '#ffffff',
-                    padding: '6vh 10vh 12vh 4vh',
-                    '@media screen and (max-width: 768px)': {
+                    padding: '9vh 10vh 12vh 4vh',
+                    '@media screen and (max-width: 850px)': {
                       padding: '0vh 12vh 17vh 4vh',
                       justifyContent: 'center',
+                    },
+                    '@media screen and (max-width: 450px)': {
+                      padding: '3vh 10vh 12vh 4vh',
                     },
                   }}
                 >
@@ -638,8 +730,17 @@ export const Portofolio = () => {
                 height: '294px',
                 position: 'relative',
                 overflow: 'hidden',
-                '@media screen and (max-width: 768px)': {
+                '@media screen and (max-width: 850px)': {
                   width: '354px',
+                  '@media screen and (max-width: 730px)': {
+                    width: '450px',
+                  },
+                  '@media screen and (max-width: 450px)': {
+                    width: '370px',
+                  },
+                  '@media screen and (max-width: 370px)': {
+                    width: '324px',
+                  },
                 },
               }}
               className={css.eigthImg}
@@ -659,10 +760,13 @@ export const Portofolio = () => {
                     letterSpacing: '0.03em',
                     textAlign: 'left',
                     color: '#ffffff',
-                    padding: '6vh 10vh 12vh 4vh',
-                    '@media screen and (max-width: 768px)': {
+                    padding: '9vh 10vh 12vh 4vh',
+                    '@media screen and (max-width: 850px)': {
                       padding: '0vh 12vh 17vh 4vh',
                       justifyContent: 'center',
+                    },
+                    '@media screen and (max-width: 450px)': {
+                      padding: '3vh 10vh 12vh 4vh',
                     },
                   }}
                 >
@@ -697,8 +801,17 @@ export const Portofolio = () => {
                 height: '294px',
                 position: 'relative',
                 overflow: 'hidden',
-                '@media screen and (max-width: 768px)': {
+                '@media screen and (max-width: 850px)': {
                   width: '354px',
+                  '@media screen and (max-width: 730px)': {
+                    width: '450px',
+                  },
+                  '@media screen and (max-width: 450px)': {
+                    width: '370px',
+                  },
+                  '@media screen and (max-width: 370px)': {
+                    width: '324px',
+                  },
                 },
               }}
               className={css.ninthImg}
@@ -718,10 +831,13 @@ export const Portofolio = () => {
                     letterSpacing: '0.03em',
                     textAlign: 'left',
                     color: '#ffffff',
-                    padding: '6vh 10vh 12vh 4vh',
-                    '@media screen and (max-width: 768px)': {
+                    padding: '9vh 10vh 12vh 4vh',
+                    '@media screen and (max-width: 850px)': {
                       padding: '0vh 12vh 17vh 4vh',
                       justifyContent: 'center',
+                    },
+                    '@media screen and (max-width: 450px)': {
+                      padding: '3vh 10vh 12vh 4vh',
                     },
                   }}
                 >

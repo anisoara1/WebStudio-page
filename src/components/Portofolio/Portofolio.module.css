@@ -3,6 +3,7 @@
   flex-direction: row;
   gap: 3vh;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .mediaBtn {
@@ -90,7 +91,7 @@
   background: url('../../images/pImg9.jpg') center / cover no-repeat;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .mediaList {
     gap: 8px;
   }
@@ -102,5 +103,52 @@
   .hoverOverlay {
     width: 354px;
     height: 440px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .cardItem {
+    width: 450px;
+  }
+
+  .hoverOverlay {
+    width: 450px;
+  }
+
+  .mediaList {
+    gap: 22px;
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cardItem {
+    width: 370px;
+    height: 404px;
+  }
+
+  .hoverOverlay {
+    width: 370px;
+    height: 404px;
+  }
+
+  .mediaList {
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .cardItem {
+    width: 324px;
+    height: 404px;
+  }
+
+  .hoverOverlay {
+    width: 324px;
+    height: 404px;
+  }
+
+  .mediaList {
+    width: 324px;
   }
 }

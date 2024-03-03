@@ -15,8 +15,8 @@
 }
 
 .icon {
-  width: 15vh;
-  height: 10vh;
+  width: 10vh;
+  height: 6vh;
 }
 
 .mainTitle {
@@ -32,5 +32,46 @@
 @media screen and (max-width: 1200px) {
   .menuList {
     gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .menuList {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .iconCard {
+    width: 240px;
+  }
+
+  .icon {
+    width: 10vh;
+    height: 7vh;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .menuList {
+    gap: 35px;
+  }
+  .iconCard {
+    width: 312px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .iconCard {
+    width: 170px;
+  }
+
+  .mainTitle {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .menuList {
+    gap: 30px;
   }
 }

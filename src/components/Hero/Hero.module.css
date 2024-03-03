@@ -7,3 +7,15 @@
   background: url('../../images/hero-webstudio.jpg') center / cover no-repeat,
     url('../../images/overaly-webstudio.jpg') center / cover no-repeat;
 }
+
+@media only screen and (max-width: 850px) {
+  .BgImg {
+    background-image: url('../../images/hero-webstudio-tablet.jpg');
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .BgImg {
+    background-image: url('../../images/hero-website-mobile.png');
+  }
+}

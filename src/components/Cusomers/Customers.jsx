@@ -24,11 +24,24 @@ export const Customers = () => {
       <Box
         padding="0"
         sx={{
+          padding: '0 10px',
           height: '55vh',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: ' center',
+          '@media screen and (max-width: 850px)': {
+            height: '75vh',
+          },
+          '@media screen and (max-width: 730px)': {
+            height: '55vh',
+          },
+          '@media screen and (max-width: 600px)': {
+            height: '70vh',
+          },
+          '@media screen and (max-width: 388px)': {
+            height: '115vh',
+          },
         }}
       >
         <h1 className={css.mainTitle}>Regular Customers</h1>
