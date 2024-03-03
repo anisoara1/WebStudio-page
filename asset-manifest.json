@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/WebStudio-page/static/css/main.372b282d.css",
-    "main.js": "/WebStudio-page/static/js/main.80690302.js",
+    "main.css": "/WebStudio-page/static/css/main.e941866b.css",
+    "main.js": "/WebStudio-page/static/js/main.e6966f32.js",
     "static/media/hero-webstudio.jpg": "/WebStudio-page/static/media/hero-webstudio.8c96a354094645f1bc15.jpg",
     "static/media/member3.jpg": "/WebStudio-page/static/media/member3.9ae0655214dbd7ee07c0.jpg",
     "static/media/member2.jpg": "/WebStudio-page/static/media/member2.873018a8946aae9b0351.jpg",
     "static/media/member1.jpg": "/WebStudio-page/static/media/member1.163c27de6a994312a651.jpg",
     "static/media/pImg2.jpg": "/WebStudio-page/static/media/pImg2.0525405717e47cf3e5cb.jpg",
+    "static/media/hero-webstudio-tablet.jpg": "/WebStudio-page/static/media/hero-webstudio-tablet.4ec21ba2d33e3fe254f5.jpg",
     "static/media/pImg9.jpg": "/WebStudio-page/static/media/pImg9.a6a0f87d59ecebbdecb9.jpg",
     "static/media/member4.jpg": "/WebStudio-page/static/media/member4.729e573ed6f056cce17c.jpg",
+    "static/media/hero-website-mobile.png": "/WebStudio-page/static/media/hero-website-mobile.55a75bfeb7a42f149ee5.png",
     "static/media/img1.jpg": "/WebStudio-page/static/media/img1.ef28cee3f2898b5b27f7.jpg",
     "static/media/pImg6.jpg": "/WebStudio-page/static/media/pImg6.28d2c83ea82b344fec5e.jpg",
     "static/media/pImg3.jpg": "/WebStudio-page/static/media/pImg3.f396ff40c733b9fcd419.jpg",
@@ -22,11 +24,11 @@
     "static/media/pImg1.jpg": "/WebStudio-page/static/media/pImg1.4fc4c13fa0737b4ef100.jpg",
     "static/media/overaly-webstudio.jpg": "/WebStudio-page/static/media/overaly-webstudio.028d78310e84865491b1.jpg",
     "index.html": "/WebStudio-page/index.html",
-    "main.372b282d.css.map": "/WebStudio-page/static/css/main.372b282d.css.map",
-    "main.80690302.js.map": "/WebStudio-page/static/js/main.80690302.js.map"
+    "main.e941866b.css.map": "/WebStudio-page/static/css/main.e941866b.css.map",
+    "main.e6966f32.js.map": "/WebStudio-page/static/js/main.e6966f32.js.map"
   },
   "entrypoints": [
-    "static/css/main.372b282d.css",
-    "static/js/main.80690302.js"
+    "static/css/main.e941866b.css",
+    "static/js/main.e6966f32.js"
   ]
 }
