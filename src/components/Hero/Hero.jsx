@@ -1,9 +1,15 @@
-import * as React from 'react';
+import React from 'react';
 import { Box, Container, Typography } from '@mui/material';
 import { Button } from '@mui/material';
 import css from '../Hero/Hero.module.css';
+import { ModalForm } from 'components/Modal/Modal';
 
 export const Hero = () => {
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
   return (
     <Container maxWidth="100%" disableGutters>
       <Box
@@ -37,7 +43,7 @@ export const Hero = () => {
           YOUR BUSINESS
         </Typography>
         <Button
-          className={css.Btn}
+          onClick={handleOpen}
           sx={{
             fontFamily: 'Roboto',
             fontSize: '16px',
@@ -64,6 +70,7 @@ export const Hero = () => {
         >
           Request our service
         </Button>
+        <ModalForm open={open} handleClose={() => setOpen(false)} />
       </Box>
     </Container>
   );

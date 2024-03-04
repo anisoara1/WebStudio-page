@@ -67,7 +67,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
           padding: '0',
           display: 'flex',
           flexDirection: 'row',
-          gap: '20px',
+          gap: '40px',
           bgcolor: 'background.default',
           '@media screen and (max-width: 600px)': {
             display: 'none',

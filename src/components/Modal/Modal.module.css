@@ -1,0 +1,52 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400;
+  border: 1px solid #21212133;
+  width: 450px;
+  height: 609px;
+  border-radius: 4px;
+}
+
+.title {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.text {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.closeIcon {
+  width: 16px;
+}
+.btn {
+  padding: 0 6px;
+  min-width: 12px;
+  border-radius: 50%;
+  border: 1px solid #bdbdbd;
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  color: #bdbdbd;
+  :hover {
+    cursor: pointer;
+    color: #2196f3;
+  }
+}
