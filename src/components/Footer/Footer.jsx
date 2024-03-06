@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import css from './Footer.module.css';
 import {
   Box,
@@ -19,6 +19,15 @@ import { useTheme } from '@mui/material';
 import CopyrightIcon from '@mui/icons-material/Copyright';
 
 export const Footer = () => {
+  const [email, setEmail] = useState('');
+
+  const handleChange = event => {
+    setEmail(event.target.value);
+  };
+
+  const handleBlur = () => {
+    setEmail(''); // Clear the email state when the input loses focus
+  };
   const theme = useTheme();
   return (
     <Container
@@ -305,14 +314,23 @@ export const Footer = () => {
             label="E-mail"
             variant="outlined"
             size="small"
+            value={email}
+            onChange={handleChange}
+            onBlur={handleBlur}
             InputProps={{
               style: {
-                color: '#FFFFFF4D',
+                color: '#F5F4FA',
+                fontFamily: 'Roboto',
+                fontSize: '18px',
+                fontWeight: '300',
+                lineHeight: '28px',
+                letterSpacing: '0.03em',
               },
             }}
             sx={{
               width: '50vh',
               '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': {
+                borderColor: '#FFFFFF4D',
                 ':&hover': {
                   borderColor: 'white',
                   color: '#FFFFFF4D',

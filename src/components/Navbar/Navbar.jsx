@@ -59,7 +59,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
       </Link>
       <MenuList
         sx={{
-          marginTop: '2.5vh',
+          marginTop: '4.5vh',
           fontFamily: 'Roboto, sans-serif',
           fontWeight: '400',
           fontSize: '18px',
@@ -84,7 +84,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
                 lineHeight: '16px',
                 letterSpacing: '0.02em',
                 color: 'text.primary',
-                padding: '0 0 22px 0',
+                padding: '0 0 36px 0',
                 cursor: 'pointer',
                 '&:hover': {
                   color: '#2196F3',
@@ -111,7 +111,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
                 lineHeight: '16px',
                 letterSpacing: '0.02em',
                 color: 'text.primary',
-                padding: '0 0 22px 0',
+                padding: '0 0 36px 0',
                 cursor: 'pointer',
                 '&:hover': {
                   color: '#2196F3',
@@ -138,7 +138,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
                 lineHeight: '16px',
                 letterSpacing: '0.02em',
                 color: 'text.primary',
-                padding: '0 0 22px 0',
+                padding: '0 0 36px 0',
                 cursor: 'pointer',
                 '&:hover': {
                   color: '#2196F3',
