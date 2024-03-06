@@ -305,16 +305,29 @@ export const Footer = () => {
             label="E-mail"
             variant="outlined"
             size="small"
+            InputProps={{
+              style: {
+                color: '#FFFFFF4D',
+              },
+            }}
             sx={{
               width: '50vh',
               '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': {
-                borderColor: '#FFFFFF4D',
+                ':&hover': {
+                  borderColor: 'white',
+                  color: '#FFFFFF4D',
+                },
               },
               '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline':
                 {
                   borderColor: 'white',
                   color: '#FFFFFF4D',
                 },
+              ':&hover': {
+                borderColor: 'white',
+                color: '#FFFFFF4D',
+              },
+
               '& .MuiInputLabel-root': {
                 fontFamily: 'Roboto',
                 fontSize: '16px',

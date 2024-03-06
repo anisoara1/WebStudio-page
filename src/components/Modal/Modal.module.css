@@ -32,21 +32,3 @@
   letter-spacing: 0.01em;
   text-align: left;
 }
-
-.closeIcon {
-  width: 16px;
-}
-.btn {
-  padding: 0 6px;
-  min-width: 12px;
-  border-radius: 50%;
-  border: 1px solid #bdbdbd;
-  position: absolute;
-  top: 6px;
-  right: 10px;
-  color: #bdbdbd;
-  :hover {
-    cursor: pointer;
-    color: #2196f3;
-  }
-}

@@ -100,8 +100,26 @@ export const ModalForm = ({ open, handleClose }) => {
       >
         <Fade in={open}>
           <Box className={css.modal} sx={{ background: '#FFFFFF' }}>
-            <Button onClose={handleClose} className={css.btn}>
-              <CloseRoundedIcon className={css.closeIcon} />
+            <Button
+              onClick={handleClose}
+              className={css.btn}
+              sx={{
+                minWidth: '20px',
+                height: '28px',
+                padding: '0 4px',
+                borderRadius: ' 50%',
+                border: '1px solid #bdbdbd',
+                position: 'absolute',
+                top: '6px',
+                right: '6px',
+                color: ' #bdbdbd',
+                '&:hover': {
+                  cursor: 'pointer',
+                  color: '#2196f3',
+                },
+              }}
+            >
+              <CloseRoundedIcon sx={{ width: '18px' }} />
             </Button>
             <Typography
               sx={{
@@ -132,15 +150,15 @@ export const ModalForm = ({ open, handleClose }) => {
                 Name
               </Typography>
               <FormControl
-                autoComplete="off"
                 style={firstForm}
                 onMouseEnter={handleMouseEnterFirstForm}
                 onMouseLeave={handleMouseLeaveFirstForm}
               >
                 <Input
+                  autoComplete="off"
                   sx={{
                     fontSize: '16px',
-                    paddingTop: '5px',
+                    paddingTop: '2px',
                     color: '#bdbdbd',
                   }}
                   name="name"
@@ -179,15 +197,15 @@ export const ModalForm = ({ open, handleClose }) => {
                 Telephone
               </Typography>
               <FormControl
-                autoComplete="off"
                 style={secondForm}
                 onMouseEnter={handleMouseEnterSecondForm}
                 onMouseLeave={handleMouseLeaveSecondForm}
               >
                 <Input
+                  autoComplete="off"
                   sx={{
                     fontSize: '16px',
-                    paddingTop: '5px',
+                    paddingTop: '2px',
                     color: '#bdbdbd',
                   }}
                   name="telephone"
@@ -227,15 +245,15 @@ export const ModalForm = ({ open, handleClose }) => {
                 E-mail
               </Typography>
               <FormControl
-                autoComplete="off"
                 style={thirdForm}
                 onMouseEnter={handleMouseEnterThirdForm}
                 onMouseLeave={handleMouseLeaveThirdForm}
               >
                 <Input
+                  autoComplete="off"
                   sx={{
                     fontSize: '16px',
-                    paddingTop: '5px',
+                    paddingTop: '2px',
                     color: '#bdbdbd',
                   }}
                   name="email"
