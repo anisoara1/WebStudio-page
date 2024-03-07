@@ -4,7 +4,7 @@ import { Footer } from '../components/Footer/Footer';
 
 export const PortofolioPage = forwardRef((props, ref) => {
   return (
-    <main>
+    <main id="portofolio">
       <Portofolio />
       <Footer ref={ref} />
       <div id="footer" style={{ visibility: 'hidden' }} />

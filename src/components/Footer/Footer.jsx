@@ -26,7 +26,7 @@ export const Footer = () => {
   };
 
   const handleBlur = () => {
-    setEmail(''); // Clear the email state when the input loses focus
+    setEmail('');
   };
   const theme = useTheme();
   return (
@@ -76,7 +76,7 @@ export const Footer = () => {
           },
         }}
       >
-        <Link to="*" className={css.link}>
+        <Link to="/*" className={css.link}>
           <Typography
             sx={{
               color: 'white',
@@ -353,6 +353,9 @@ export const Footer = () => {
                 lineHeight: '28px',
                 letterSpacing: '0.03em',
                 color: '#FFFFFF4D',
+                ':&hover': {
+                  color: '#FFFFFF4D',
+                },
                 '@media screen and (max-width: 600px)': {
                   fontSize: '14px',
                 },

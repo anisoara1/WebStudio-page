@@ -130,6 +130,10 @@ export const ModalForm = ({ open, handleClose }) => {
                 lineHeight: '23px',
                 letterSpacing: '0.03em',
                 textAlign: 'center',
+                '@media screen and (max-width: 450px)': {
+                  fontSize: '18px',
+                  letterSpacing: '0.01em',
+                },
               }}
             >
               Leave your information and we'll call
@@ -153,6 +157,11 @@ export const ModalForm = ({ open, handleClose }) => {
                 style={firstForm}
                 onMouseEnter={handleMouseEnterFirstForm}
                 onMouseLeave={handleMouseLeaveFirstForm}
+                sx={{
+                  '@media screen and (max-width: 450px)': {
+                    maxWidth: '300px',
+                  },
+                }}
               >
                 <Input
                   autoComplete="off"
@@ -166,7 +175,10 @@ export const ModalForm = ({ open, handleClose }) => {
                   startAdornment={
                     <InputAdornment
                       position="start"
-                      sx={{ marginLeft: '30px', fontSize: '12px' }}
+                      sx={{
+                        marginLeft: '30px',
+                        fontSize: '12px',
+                      }}
                     >
                       <PersonIcon
                         sx={{
@@ -200,6 +212,11 @@ export const ModalForm = ({ open, handleClose }) => {
                 style={secondForm}
                 onMouseEnter={handleMouseEnterSecondForm}
                 onMouseLeave={handleMouseLeaveSecondForm}
+                sx={{
+                  '@media screen and (max-width: 450px)': {
+                    maxWidth: '300px',
+                  },
+                }}
               >
                 <Input
                   autoComplete="off"
@@ -248,6 +265,11 @@ export const ModalForm = ({ open, handleClose }) => {
                 style={thirdForm}
                 onMouseEnter={handleMouseEnterThirdForm}
                 onMouseLeave={handleMouseLeaveThirdForm}
+                sx={{
+                  '@media screen and (max-width: 450px)': {
+                    maxWidth: '300px',
+                  },
+                }}
               >
                 <Input
                   autoComplete="off"
@@ -297,6 +319,11 @@ export const ModalForm = ({ open, handleClose }) => {
                 style={fourthForm}
                 onMouseEnter={handleMouseEnterFourthForm}
                 onMouseLeave={handleMouseLeaveFourthForm}
+                sx={{
+                  '@media screen and (max-width: 450px)': {
+                    maxWidth: '300px',
+                  },
+                }}
               >
                 <Input
                   placeholder="Enter the text"
@@ -319,14 +346,23 @@ export const ModalForm = ({ open, handleClose }) => {
             </div>
             <Box
               sx={{
+                marginLeft: '-16px',
                 display: 'flex',
                 flexDirection: 'row',
                 gap: '2px',
                 alignItems: 'center',
-                justifyContent: 'center',
+                justifyContent: 'flex-start',
+                '@media screen and (max-width: 450px)': {
+                  gap: '0',
+                },
               }}
             >
-              <Checkbox defaultChecked size="small" name="chekbox" />
+              <Checkbox
+                defaultChecked
+                size="small"
+                name="chekbox"
+                sx={{ padding: '0' }}
+              />
               <Typography
                 sx={{
                   color: '#757575',
@@ -336,6 +372,11 @@ export const ModalForm = ({ open, handleClose }) => {
                   fontWeight: '400',
                   lineHeight: '14px',
                   letterSpacing: '0.03em',
+                  '@media screen and (max-width: 450px)': {
+                    fontSize: '10px',
+                    fontWeight: '300',
+                    lineHeight: '10px',
+                  },
                 }}
               >
                 I agree with the letter and accept the

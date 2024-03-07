@@ -5,8 +5,14 @@ import { Link } from 'react-router-dom';
 import { useTheme } from '@mui/material';
 import ThemeSwitch from 'components/ThemeSwich';
 import MenuIcon from '@mui/icons-material/Menu';
+import { MobileModal } from 'components/MobileMenu/MobileMenu';
 
 export const Header = forwardRef(({ toggleDarkMode }, ref) => {
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
   const handleClickContact = e => {
     e.preventDefault();
     const footer = document.getElementById('footer');
@@ -84,7 +90,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
                 lineHeight: '16px',
                 letterSpacing: '0.02em',
                 color: 'text.primary',
-                padding: '0 0 36px 0',
+                padding: '0 0 34px 0',
                 cursor: 'pointer',
                 '&:hover': {
                   color: '#2196F3',
@@ -111,7 +117,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
                 lineHeight: '16px',
                 letterSpacing: '0.02em',
                 color: 'text.primary',
-                padding: '0 0 36px 0',
+                padding: '0 0 34px 0',
                 cursor: 'pointer',
                 '&:hover': {
                   color: '#2196F3',
@@ -138,7 +144,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
                 lineHeight: '16px',
                 letterSpacing: '0.02em',
                 color: 'text.primary',
-                padding: '0 0 36px 0',
+                padding: '0 0 34px 0',
                 cursor: 'pointer',
                 '&:hover': {
                   color: '#2196F3',
@@ -232,6 +238,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
         </li>
       </MenuList>
       <MenuIcon
+        onClick={handleOpen}
         sx={{
           display: 'block',
           '&:hover': {
@@ -243,6 +250,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
           },
         }}
       />
+      <MobileModal open={open} handleClose={() => setOpen(false)} />
     </Box>
   );
 });
