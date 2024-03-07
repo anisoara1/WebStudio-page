@@ -10,7 +10,7 @@ const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <BrowserRouter basename="/WebStudio-page/">
+    <BrowserRouter basename="/WebStudio-page">
       <App />
     </BrowserRouter>
   </StrictMode>
