@@ -354,7 +354,7 @@ export const Footer = () => {
                 letterSpacing: '0.03em',
                 color: '#FFFFFF4D',
                 ':&hover': {
-                  color: '#FFFFFF4D',
+                  borderColor: '#FFFFFF4D',
                 },
                 '@media screen and (max-width: 600px)': {
                   fontSize: '14px',

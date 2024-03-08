@@ -90,7 +90,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
                 lineHeight: '16px',
                 letterSpacing: '0.02em',
                 color: 'text.primary',
-                padding: '0 0 34px 0',
+                padding: '0 0 32px 0',
                 cursor: 'pointer',
                 '&:hover': {
                   color: '#2196F3',
@@ -117,7 +117,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
                 lineHeight: '16px',
                 letterSpacing: '0.02em',
                 color: 'text.primary',
-                padding: '0 0 34px 0',
+                padding: '0 0 32px 0',
                 cursor: 'pointer',
                 '&:hover': {
                   color: '#2196F3',
@@ -144,7 +144,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
                 lineHeight: '16px',
                 letterSpacing: '0.02em',
                 color: 'text.primary',
-                padding: '0 0 34px 0',
+                padding: '0 0 32px 0',
                 cursor: 'pointer',
                 '&:hover': {
                   color: '#2196F3',

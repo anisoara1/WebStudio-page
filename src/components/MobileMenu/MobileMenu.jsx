@@ -69,11 +69,11 @@ export const MobileModal = ({ open, handleClose }) => {
                       lineHeight: '47px',
                       cursor: 'pointer',
                       color: '#212121',
+                      '@media screen and (max-width: 450px)': {
+                        fontSize: '20px',
+                      },
                       '&:hover': {
                         color: '#2196F3',
-                        '@media screen and (max-width: 450px)': {
-                          fontSize: '20px',
-                        },
                       },
                     }}
                   >
@@ -91,11 +91,11 @@ export const MobileModal = ({ open, handleClose }) => {
                       lineHeight: '47px',
                       cursor: 'pointer',
                       color: '#212121',
+                      '@media screen and (max-width: 450px)': {
+                        fontSize: '20px',
+                      },
                       '&:hover': {
                         color: '#2196F3',
-                        '@media screen and (max-width: 450px)': {
-                          fontSize: '20px',
-                        },
                       },
                     }}
                   >
@@ -117,11 +117,11 @@ export const MobileModal = ({ open, handleClose }) => {
                       lineHeight: '47px',
                       cursor: 'pointer',
                       color: '#212121',
+                      '@media screen and (max-width: 450px)': {
+                        fontSize: '20px',
+                      },
                       '&:hover': {
                         color: '#2196F3',
-                        '@media screen and (max-width: 450px)': {
-                          fontSize: '20px',
-                        },
                       },
                     }}
                   >
@@ -158,11 +158,11 @@ export const MobileModal = ({ open, handleClose }) => {
                         color: '#212121',
                         padding: '0',
                         cursor: 'pointer',
+                        '@media screen and (max-width: 450px)': {
+                          fontSize: '18px',
+                        },
                         '&:hover': {
                           color: '#2196F3',
-                          '@media screen and (max-width: 450px)': {
-                            fontSize: '18px',
-                          },
                         },
                       }}
                     >
@@ -186,12 +186,11 @@ export const MobileModal = ({ open, handleClose }) => {
                         color: '#212121',
                         padding: '0',
                         cursor: 'pointer',
+                        '@media screen and (max-width: 450px)': {
+                          fontSize: '16px',
+                        },
                         '&:hover': {
                           color: '#2196F3',
-
-                          '@media screen and (max-width: 450px)': {
-                            fontSize: '16px',
-                          },
                         },
                       }}
                     >
@@ -202,7 +201,22 @@ export const MobileModal = ({ open, handleClose }) => {
               </MenuList>
               <MenuList className={css.mediaList}>
                 <li className={css.mediaList}>
-                  <Typography className={css.media}>Instagram</Typography>
+                  <Typography
+                    sx={{
+                      color: '#2196f3',
+                      fontFamily: 'Roboto',
+                      fontSize: ' 18px',
+                      fontWeight: '500',
+                      lineHeight: '22px',
+                      letterSpacing: '0.02em',
+                      textAlign: 'left',
+                      '@media screen and (max-width: 450px)': {
+                        fontSize: '14px',
+                      },
+                    }}
+                  >
+                    Instagram
+                  </Typography>
                   <HorizontalRuleRoundedIcon
                     sx={{
                       fontSize: 'small',
@@ -212,7 +226,22 @@ export const MobileModal = ({ open, handleClose }) => {
                   />
                 </li>
                 <li className={css.mediaList}>
-                  <Typography className={css.media}>Twitter</Typography>
+                  <Typography
+                    sx={{
+                      color: '#2196f3',
+                      fontFamily: 'Roboto',
+                      fontSize: ' 18px',
+                      fontWeight: '500',
+                      lineHeight: '22px',
+                      letterSpacing: '0.02em',
+                      textAlign: 'left',
+                      '@media screen and (max-width: 450px)': {
+                        fontSize: '14px',
+                      },
+                    }}
+                  >
+                    Twitter
+                  </Typography>
                   <HorizontalRuleRoundedIcon
                     sx={{
                       fontSize: 'small',
@@ -222,7 +251,22 @@ export const MobileModal = ({ open, handleClose }) => {
                   />
                 </li>
                 <li className={css.mediaList}>
-                  <Typography className={css.media}>Facebook</Typography>
+                  <Typography
+                    sx={{
+                      color: '#2196f3',
+                      fontFamily: 'Roboto',
+                      fontSize: ' 18px',
+                      fontWeight: '500',
+                      lineHeight: '22px',
+                      letterSpacing: '0.02em',
+                      textAlign: 'left',
+                      '@media screen and (max-width: 450px)': {
+                        fontSize: '14px',
+                      },
+                    }}
+                  >
+                    Facebook
+                  </Typography>
                   <HorizontalRuleRoundedIcon
                     sx={{
                       fontSize: 'small',
@@ -232,7 +276,22 @@ export const MobileModal = ({ open, handleClose }) => {
                   />
                 </li>
                 <li className={css.mediaList}>
-                  <Typography className={css.media}>LinkedIn</Typography>
+                  <Typography
+                    sx={{
+                      color: '#2196f3',
+                      fontFamily: 'Roboto',
+                      fontSize: ' 18px',
+                      fontWeight: '500',
+                      lineHeight: '22px',
+                      letterSpacing: '0.02em',
+                      textAlign: 'left',
+                      '@media screen and (max-width: 450px)': {
+                        fontSize: '14px',
+                      },
+                    }}
+                  >
+                    LinkedIn
+                  </Typography>
                 </li>
               </MenuList>
             </Box>
