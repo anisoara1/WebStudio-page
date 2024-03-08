@@ -38,7 +38,7 @@ export const Header = forwardRef(({ toggleDarkMode }, ref) => {
     <Box
       ref={ref}
       sx={{
-        height: '82px',
+        height: '83px',
         bgcolor: 'background.default',
         color: 'text.primary',
         borderBottom: `2px solid ${borderShadow}`,
