@@ -37,10 +37,13 @@ export const OurTeam = () => {
             height: '320vh',
           },
           '@media screen and (max-width: 850px)': {
-            height: '690vh',
+            height: '650vh',
+          },
+          '@media screen and (max-width: 730px)': {
+            height: '420vh',
           },
           '@media screen and (max-width: 450px)': {
-            height: '320vh',
+            height: '280vh',
           },
         }}
       >

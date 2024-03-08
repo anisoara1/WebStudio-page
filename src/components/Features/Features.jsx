@@ -36,11 +36,14 @@ export const Features = () => {
             height: '150vh',
             alignItems: 'center',
           },
+          '@media screen and (max-width: 850px)': {
+            height: '150vh',
+          },
           '@media screen and (max-width: 730px)': {
-            height: '145vh',
+            height: '170vh',
           },
           '@media screen and (max-width: 450px)': {
-            height: '180vh',
+            height: '160vh',
           },
         }}
       >

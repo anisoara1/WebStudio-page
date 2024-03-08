@@ -34,7 +34,7 @@ export const Customers = () => {
             height: '85vh',
           },
           '@media screen and (max-width: 850px)': {
-            height: '135vh',
+            height: '145vh',
           },
           '@media screen and (max-width: 730px)': {
             height: '55vh',
