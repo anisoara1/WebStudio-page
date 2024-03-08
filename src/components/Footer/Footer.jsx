@@ -332,20 +332,14 @@ export const Footer = () => {
               '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': {
                 borderColor: '#FFFFFF4D',
                 ':&hover': {
-                  borderColor: 'white',
+                  borderColor: '#FFFFFF4D',
                   color: '#FFFFFF4D',
                 },
               },
               '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline':
                 {
                   borderColor: 'white',
-                  color: '#FFFFFF4D',
                 },
-              ':&hover': {
-                borderColor: 'white',
-                color: '#FFFFFF4D',
-              },
-
               '& .MuiInputLabel-root': {
                 fontFamily: 'Roboto',
                 fontSize: '16px',
@@ -353,9 +347,6 @@ export const Footer = () => {
                 lineHeight: '28px',
                 letterSpacing: '0.03em',
                 color: '#FFFFFF4D',
-                ':&hover': {
-                  borderColor: '#FFFFFF4D',
-                },
                 '@media screen and (max-width: 600px)': {
                   fontSize: '14px',
                 },
