@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/WebStudio-page/static/css/main.6e41b797.css",
-    "main.js": "/WebStudio-page/static/js/main.928b34fa.js",
+    "main.js": "/WebStudio-page/static/js/main.82a939a7.js",
     "static/media/hero-webstudio.jpg": "/WebStudio-page/static/media/hero-webstudio.8c96a354094645f1bc15.jpg",
     "static/media/member3.jpg": "/WebStudio-page/static/media/member3.9ae0655214dbd7ee07c0.jpg",
     "static/media/member2.jpg": "/WebStudio-page/static/media/member2.873018a8946aae9b0351.jpg",
@@ -25,10 +25,10 @@
     "static/media/overaly-webstudio.jpg": "/WebStudio-page/static/media/overaly-webstudio.028d78310e84865491b1.jpg",
     "index.html": "/WebStudio-page/index.html",
     "main.6e41b797.css.map": "/WebStudio-page/static/css/main.6e41b797.css.map",
-    "main.928b34fa.js.map": "/WebStudio-page/static/js/main.928b34fa.js.map"
+    "main.82a939a7.js.map": "/WebStudio-page/static/js/main.82a939a7.js.map"
   },
   "entrypoints": [
     "static/css/main.6e41b797.css",
-    "static/js/main.928b34fa.js"
+    "static/js/main.82a939a7.js"
   ]
 }
